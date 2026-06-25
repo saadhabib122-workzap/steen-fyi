@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decision Laundering — STEEN.FYI</title>
+  <meta name="description" content="Why more data still leads to bad decisions, and what leaders can do about it. Steen Rasmussen's flagship keynote on Decision Laundering.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>(function(){var t=localStorage.getItem('steen-theme');if(t)document.documentElement.setAttribute('data-theme',t)})()</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav nav--transparent" id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-ring">SR</div><span class="nav-logo-text">STEEN.FYI</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="speaking.html">Speaking</a></li>
+      <li><a href="contact.html">Get In Touch</a></li><li><a href="decision-laundering.html">Decision Laundering</a></li><li><a href="articles.html">Articles</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://open.spotify.com" target="_blank" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/><path d="M7 16.5a12 12 0 0 1 9-1.5"/><path d="M8 10.5a12 12 0 0 1 8 1"/></svg></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.97A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://medium.com" target="_blank" aria-label="Medium"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
+        <a href="https://linkedin.com/in/steenrasmussen" target="_blank" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+      <a href="booking.html" class="btn-nav">Invite Steen to Speak</a>
+      <button class="dark-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About me</a><a href="speaking.html">Speaking</a>
+  <a href="decision-laundering.html">Decision Laundering</a><a href="articles.html">Articles</a><a href="contact.html">Get In Touch</a>
+  <div class="drawer-social"><button class="dark-toggle" aria-label="Toggle dark mode"><svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div>
+  <a href="booking.html" class="btn btn--amber drawer-cta">Invite Steen to Speak</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero-photo">
+  <div class="hero-photo__bg" style="background-image:url('Brand_Assests/01_steen_stage_auditorium.png')"></div>
+  <div class="hero-photo__overlay"></div>
+  <div class="hero-photo__content">
+    <p class="eyebrow anim" style="color:var(--amber)"><span style="background:var(--amber);width:28px;height:2px;display:block"></span>The Leadership Discipline Behind Data-Driven Decisions</p>
+    <h1 class="display-headline anim d1" style="max-width:820px">Where Data Meets Purpose,<br><em>Keynotes That Drive Change.</em></h1>
+    <p class="hero-sub anim d2">Keynotes designed to shift perspectives, energize audiences, and equip organisations to thrive.</p>
+    <div class="btn-group anim d3">
+      <a href="#book" class="btn btn--amber">Book Steen for Your Event</a>
+      <a href="#about-talk" class="btn btn--outline-light">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- TALK INTRO -->
+<section class="section section--dark on-dark" id="about-talk">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,6rem);align-items:center">
+      <div class="anim">
+        <p class="eyebrow">Flagship Keynote</p>
+        <h2 style="font-size:var(--t-5xl);color:var(--ivory);line-height:1.05;margin-bottom:1rem">Decision<br>Laundering</h2>
+        <p style="font-family:var(--font-serif);font-style:italic;font-size:var(--t-xl);color:rgba(247,243,239,.85);margin-bottom:1.5rem;line-height:1.5">Why More Data Still Leads to Bad Decisions, and What Leaders Can Do About It</p>
+        <div class="btn-group">
+          <a href="#book" class="btn btn--amber">Book Steen for Your Event</a>
+        </div>
+      </div>
+      <div class="anim d1">
+        <p style="color:rgba(247,243,239,.72);line-height:1.85;font-size:var(--t-lg);margin-bottom:1.5rem">This keynote explores why organizations can have more dashboards, more AI, and more analytical firepower than ever before — and still make poor decisions.</p>
+        <p style="color:rgba(247,243,239,.72);line-height:1.85;font-size:var(--t-lg)">The issue is not access to data. The issue is how leaders use data to validate decisions they have already made. This is Decision Laundering — and it's more common than any organization would like to admit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S THE TALK ABOUT -->
+<section class="section">
+  <div class="container">
+    <div class="sh sh--center anim">
+      <p class="eyebrow">The Problem</p>
+      <h2 class="sh__title">More Data + More Tools = More Uncertainty?</h2>
+      <p class="sh__sub">Leaders have more data than ever. Dashboards, AI, automation, reports, and prediction tools have not removed uncertainty. The problem is not lack of data — it's lack of disciplined decision-making.</p>
+    </div>
+    <div class="grid-3 anim d1" style="margin-top:0">
+      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:4px">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0d1e37);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">The Pattern</h3>
+        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">Organizations invest heavily in analytics and AI, yet decision quality doesn't improve proportionally. The data is there. Something else is broken.</p>
+      </div>
+      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:4px">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0d1e37);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">The Root Cause</h3>
+        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">Leaders use data after the fact to justify decisions they've already made. The data doesn't drive the decision — it launders it. Confidence is manufactured, not earned.</p>
+      </div>
+      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:4px">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0d1e37);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">The Solution</h3>
+        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">A practical framework for making better decisions, challenging assumptions, and building organizations that are genuinely data-informed — not just data-adjacent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR -->
+<section class="section section--dark on-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,6rem)">
+      <div class="anim">
+        <p class="eyebrow">Audience</p>
+        <h2 style="font-size:var(--t-4xl);color:var(--ivory);margin-bottom:1.5rem">Who Is This Talk For?</h2>
+        <p style="color:rgba(247,243,239,.72);line-height:1.8;font-size:var(--t-lg)">This keynote is designed for organizations that already have data, tools, and ambition — but struggle to turn insight into confident decisions.</p>
+      </div>
+      <div class="anim d1">
+        <ul style="display:flex;flex-direction:column;gap:1rem;list-style:none;padding:0">
+          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(247,243,239,.07)">
+            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
+            <span style="color:rgba(247,243,239,.82);line-height:1.65">Executive leaders, P&amp;L owners and senior decision-makers who need clarity in complexity</span>
+          </li>
+          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(247,243,239,.07)">
+            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
+            <span style="color:rgba(247,243,239,.82);line-height:1.65">Data &amp; analytics leaders who need to influence decisions, not just produce reports</span>
+          </li>
+          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(247,243,239,.07)">
+            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
+            <span style="color:rgba(247,243,239,.82);line-height:1.65">Strategy, transformation and commercial teams navigating uncertainty</span>
+          </li>
+          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(247,243,239,.07)">
+            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
+            <span style="color:rgba(247,243,239,.82);line-height:1.65">Organizations investing in AI and analytics who want to avoid faster bad decisions</span>
+          </li>
+          <li style="display:flex;gap:.9rem;align-items:flex-start">
+            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
+            <span style="color:rgba(247,243,239,.82);line-height:1.65">Leadership teams under pressure to become more data-informed without becoming more confused</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL MATURITY REFLECTION -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;text-align:center" class="anim">
+      <p class="eyebrow" style="justify-content:center">Inside the Talk</p>
+      <blockquote style="font-family:var(--font-serif);font-size:clamp(1.5rem,3vw,2.25rem);font-style:italic;line-height:1.4;margin-bottom:1.5rem;color:var(--text)">"Digital Maturity? A needed reflection."</blockquote>
+      <p class="lead">Most organizations don't struggle with access to information. They struggle with how that information shapes thinking, conversations, and decisions.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:2rem">
+        <span class="tag">Momentum</span>
+        <span class="tag">Context</span>
+        <span class="tag">Alignment</span>
+        <span class="tag">Value</span>
+        <span class="tag">Uncertainty</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STEEN -->
+<section class="section section--dark on-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:center">
+      <div class="anim" style="flex-shrink:0">
+        <div style="width:clamp(160px,25vw,260px);aspect-ratio:3/4;border-radius:4px;overflow:hidden">
+          <img src="Brand_Assests/02_steen_portrait_linkedin_card.png" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:top center">
+        </div>
+      </div>
+      <div class="anim d1">
+        <p class="eyebrow">About Steen</p>
+        <blockquote style="font-family:var(--font-serif);font-style:italic;font-size:var(--t-xl);color:rgba(247,243,239,.85);border-left:3px solid var(--amber);padding-left:1.25rem;margin-bottom:1.5rem;line-height:1.5">"I make data human. Whether speaking at global conferences or consulting Fortune 500 companies, my work is about translating complexity into clarity."</blockquote>
+        <p style="color:rgba(247,243,239,.72);line-height:1.8;margin-bottom:.75rem">Steen Rasmussen is a globally recognized keynote speaker and founder of Data Analytics Society. With over 20 years of experience, Steen specializes in helping leadership teams transform complex data into sharper thinking and better strategic choices.</p>
+        <p style="color:rgba(247,243,239,.72);line-height:1.8">Known for his clarity and warmth, he works with organizations across Europe, from Silicon Valley to Mumbai, translating complexity into practical action. He is the co-founder of IIH Nordic, a pioneer in operational excellence and progressive workplace models, including the 4-day workweek.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="sh sh--center anim">
+      <p class="eyebrow">Reviews</p>
+      <h2 class="sh__title">What Organizers Say</h2>
+    </div>
+    <div class="grid-3">
+      <div class="testimonial anim d1"><p class="testimonial__body">Inviting Steen Rasmussen as a keynote speaker for The Google Analytics 4 Summit was a clever move based on the feedback of the audience. His performance was so impactful that we're already considering a repeat engagement.</p><p class="testimonial__name">Roberto Guiotto</p><p class="testimonial__role">Lead organizer, GA Summit</p></div>
+      <div class="testimonial anim d2"><p class="testimonial__body">Steen has been a regular keynote speaker at our last many Superweek events, and his presentations are always both enlightening and engaging. He is the least of my concerns.</p><p class="testimonial__name">Zoltán Bánóczy</p><p class="testimonial__role">Lead organizer, Superweek</p></div>
+      <div class="testimonial anim d3"><p class="testimonial__body">Steen is one of those experienced practitioners who "screams": Trust me, I know what I'm doing, from the moment he steps on the stage. His first-hand insights were deeply valued by every single member of the audience.</p><p class="testimonial__name">Darko Buldioski</p><p class="testimonial__role">Lead organizer, ALLWEB Conference</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK A CALL -->
+<section class="section section--dark on-dark" id="book">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,6rem)">
+      <div class="anim">
+        <p class="eyebrow">Book a Call</p>
+        <h2 style="font-size:var(--t-4xl);color:var(--ivory);margin-bottom:1rem">Let's Grab a Virtual Coffee</h2>
+        <p style="color:rgba(247,243,239,.72);line-height:1.8;max-width:400px">Ready to explore bringing Decision Laundering to your organization? Reach out and we'll set up a quick conversation to discuss your event, audience, and objectives.</p>
+      </div>
+      <div class="anim d1">
+        <form class="form site-form">
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" style="color:rgba(247,243,239,.6)">First Name</label><input class="form-input" type="text" placeholder="First name" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:var(--ivory)"></div>
+            <div class="form-group"><label class="form-label" style="color:rgba(247,243,239,.6)">Last Name</label><input class="form-input" type="text" placeholder="Last name" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:var(--ivory)"></div>
+          </div>
+          <div class="form-group"><label class="form-label" style="color:rgba(247,243,239,.6)">Email</label><input class="form-input" type="email" placeholder="your@email.com" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:var(--ivory)"></div>
+          <div class="form-group"><label class="form-label" style="color:rgba(247,243,239,.6)">Organisation / Company</label><input class="form-input" type="text" placeholder="Your organisation" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:var(--ivory)"></div>
+          <div class="form-group"><label class="form-label" style="color:rgba(247,243,239,.6)">Message</label><textarea class="form-textarea" placeholder="Tell us about your event..." style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:var(--ivory)"></textarea></div>
+          <button type="submit" class="btn btn--amber">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div>
+        <p class="footer__brand-name">STEEN.FYI</p>
+        <p class="footer__brand-sub">Keynote Speaker · Data, AI &amp; Decision Intelligence.<br>Book Steen for your next event.</p>
+        <div style="margin-bottom:1.5rem"><a href="booking.html" class="btn btn--amber">Invite Steen</a></div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Spotify"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/></svg></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div><p class="footer__col-label">Navigate</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="contact.html">Get in Touch</a></li><li><a href="about.html">About</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul></div>
+      <div><p class="footer__col-label">Speaking</p><ul class="footer__links"><li><a href="speaking.html">Keynotes</a></li><li><a href="decision-laundering.html">Decision Laundering</a></li><li><a href="articles.html">Articles</a></li><li><a href="booking.html">Book Steen</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Steen.fyi. All rights reserved.</p><div class="footer__bottom-links"><a href="privacy-policy.html">Privacy Policy</a></div></div>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
+<script src="js/script.js"></script>
+</body>
+</html>

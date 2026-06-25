@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Article — STEEN.FYI</title>
+  <meta name="description" id="page-desc" content="An article by Steen Rasmussen on data, decisions, and leadership.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>(function(){var t=localStorage.getItem('steen-theme');if(t)document.documentElement.setAttribute('data-theme',t)})()</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-ring">SR</div><span class="nav-logo-text">STEEN.FYI</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="speaking.html">Speaking</a></li>
+      <li><a href="contact.html">Get In Touch</a></li><li><a href="decision-laundering.html">Decision Laundering</a></li><li><a href="articles.html">Articles</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://open.spotify.com" target="_blank" aria-label="Spotify"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/><path d="M7 16.5a12 12 0 0 1 9-1.5"/><path d="M8 10.5a12 12 0 0 1 8 1"/></svg></a>
+        <a href="https://linkedin.com/in/steenrasmussen" target="_blank" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+      <a href="booking.html" class="btn-nav">Invite Steen to Speak</a>
+      <button class="dark-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="about.html">About me</a><a href="speaking.html">Speaking</a>
+  <a href="decision-laundering.html">Decision Laundering</a><a href="articles.html">Articles</a><a href="contact.html">Get In Touch</a>
+  <div class="drawer-social"><button class="dark-toggle" aria-label="Toggle dark mode"><svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div>
+  <a href="booking.html" class="btn btn--amber drawer-cta">Invite Steen to Speak</a>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section id="article-hero" style="background:var(--bg-dark);padding:calc(var(--nav-h) + 5rem) 0 4rem;color:var(--ivory)">
+  <div class="container" style="max-width:760px">
+    <a href="articles.html" style="display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--amber);margin-bottom:2rem;opacity:.85">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      All Articles
+    </a>
+    <p id="article-date" class="overline" style="color:var(--amber);margin-bottom:.75rem;font-size:.75rem"></p>
+    <h1 id="article-title" style="font-size:var(--t-4xl);color:var(--ivory);line-height:1.15;margin-bottom:1.25rem"></h1>
+    <p id="article-excerpt" style="font-size:var(--t-lg);color:rgba(247,243,239,.72);line-height:1.7;max-width:620px"></p>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<div class="article-body" id="article-content">
+  <p style="color:var(--text-muted);font-style:italic">Loading article...</p>
+</div>
+
+<!-- NEXT / PREV NAV -->
+<div style="border-top:1px solid var(--border);padding:3rem 0;background:var(--bg-alt)">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap">
+    <a id="prev-link" href="articles.html" style="display:flex;flex-direction:column;gap:.3rem;text-decoration:none;max-width:45%">
+      <span style="font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--text-muted)">← Previous</span>
+      <span id="prev-title" style="font-family:var(--font-serif);font-size:var(--t-lg);color:var(--text)"></span>
+    </a>
+    <a id="next-link" href="articles.html" style="display:flex;flex-direction:column;gap:.3rem;text-decoration:none;text-align:right;max-width:45%">
+      <span style="font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--text-muted)">Next →</span>
+      <span id="next-title" style="font-family:var(--font-serif);font-size:var(--t-lg);color:var(--text)"></span>
+    </a>
+  </div>
+</div>
+
+<!-- AUTHOR BIO -->
+<section style="background:var(--bg-dark);padding:4rem 0;color:var(--ivory)">
+  <div class="container" style="max-width:760px">
+    <div style="display:flex;gap:1.5rem;align-items:center;padding-bottom:2rem;border-bottom:1px solid rgba(247,243,239,.08);margin-bottom:2rem">
+      <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--amber)">
+        <img src="Brand_Assests/02_steen_portrait_linkedin_card.png" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:top">
+      </div>
+      <div>
+        <p style="font-family:var(--font-serif);font-weight:700;font-size:var(--t-xl);color:var(--ivory)">Steen Rasmussen</p>
+        <p style="font-size:.8rem;color:rgba(247,243,239,.55);letter-spacing:.06em;text-transform:uppercase;font-weight:500">Keynote Speaker · Data, AI &amp; Decision Intelligence</p>
+      </div>
+    </div>
+    <p style="color:rgba(247,243,239,.72);line-height:1.8;margin-bottom:1.5rem">Steen Rasmussen is a globally recognized keynote speaker with over 20 years of experience at the intersection of data, business, and people. He helps organizations make better decisions — not just faster ones.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="booking.html" class="btn btn--amber">Invite Steen to Speak</a>
+      <a href="about.html" class="btn btn--outline-light">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div>
+        <p class="footer__brand-name">STEEN.FYI</p>
+        <p class="footer__brand-sub">Keynote Speaker · Data, AI &amp; Decision Intelligence.<br>Book Steen for your next event.</p>
+        <div style="margin-bottom:1.5rem"><a href="booking.html" class="btn btn--amber">Invite Steen</a></div>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Spotify"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/></svg></a>
+          <a href="https://linkedin.com/in/steenrasmussen" target="_blank" class="footer__social-link" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div><p class="footer__col-label">Navigate</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="contact.html">Get in Touch</a></li><li><a href="about.html">About</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul></div>
+      <div><p class="footer__col-label">Speaking</p><ul class="footer__links"><li><a href="speaking.html">Keynotes</a></li><li><a href="decision-laundering.html">Decision Laundering</a></li><li><a href="articles.html">Articles</a></li><li><a href="booking.html">Book Steen</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">&copy; 2026 Steen.fyi. All rights reserved.</p><div class="footer__bottom-links"><a href="privacy-policy.html">Privacy Policy</a></div></div>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
+
+<script src="js/articles-data.js"></script>
+<script src="js/script.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var slug = params.get('slug');
+
+  if (!slug || !ARTICLES) { window.location.href = 'articles.html'; return; }
+
+  var idx = ARTICLES.findIndex(function (a) { return a.slug === slug; });
+  if (idx === -1) { window.location.href = 'articles.html'; return; }
+
+  var article = ARTICLES[idx];
+
+  document.getElementById('page-title').textContent = article.title + ' — STEEN.FYI';
+  document.getElementById('page-desc').setAttribute('content', article.excerpt || '');
+  document.getElementById('article-date').textContent = article.displayDate;
+  document.getElementById('article-title').textContent = article.title;
+  document.getElementById('article-excerpt').textContent = article.excerpt || '';
+
+  // Simple markdown-to-HTML renderer
+  function renderMarkdown(text) {
+    var lines = text.split('\n');
+    var html = '';
+    var inList = false;
+    var listTag = '';
+
+    function closelist() {
+      if (inList) { html += '</' + listTag + '>'; inList = false; listTag = ''; }
+    }
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+
+      // Headings
+      if (/^## /.test(line)) { closelist(); html += '<h2>' + inline(line.slice(3)) + '</h2>'; continue; }
+      if (/^### /.test(line)) { closelist(); html += '<h3>' + inline(line.slice(4)) + '</h3>'; continue; }
+
+      // Horizontal rule
+      if (/^-{3,}$/.test(line.trim()) || /^\*{3,}$/.test(line.trim())) { closelist(); html += '<hr>'; continue; }
+
+      // Blockquote
+      if (/^>/.test(line)) { closelist(); html += '<blockquote>' + inline(line.slice(1).trim()) + '</blockquote>'; continue; }
+
+      // Ordered list
+      if (/^\d+\.\s/.test(line)) {
+        if (!inList || listTag !== 'ol') { closelist(); html += '<ol>'; inList = true; listTag = 'ol'; }
+        html += '<li>' + inline(line.replace(/^\d+\.\s/, '')) + '</li>';
+        continue;
+      }
+
+      // Unordered list
+      if (/^[-*]\s/.test(line)) {
+        if (!inList || listTag !== 'ul') { closelist(); html += '<ul>'; inList = true; listTag = 'ul'; }
+        html += '<li>' + inline(line.replace(/^[-*]\s/, '')) + '</li>';
+        continue;
+      }
+
+      // Empty line
+      if (line.trim() === '') { closelist(); continue; }
+
+      // Paragraph
+      closelist();
+      html += '<p>' + inline(line) + '</p>';
+    }
+    closelist();
+    return html;
+  }
+
+  function inline(text) {
+    return text
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em>$1</em>')
+      .replace(/`(.+?)`/g, '<code>$1</code>');
+  }
+
+  document.getElementById('article-content').innerHTML = renderMarkdown(article.body);
+
+  // Prev / Next
+  var prevArticle = ARTICLES[idx - 1];
+  var nextArticle = ARTICLES[idx + 1];
+
+  var prevLink = document.getElementById('prev-link');
+  var nextLink = document.getElementById('next-link');
+
+  if (prevArticle) {
+    prevLink.href = 'article.html?slug=' + prevArticle.slug;
+    document.getElementById('prev-title').textContent = prevArticle.title;
+  } else {
+    prevLink.style.visibility = 'hidden';
+  }
+
+  if (nextArticle) {
+    nextLink.href = 'article.html?slug=' + nextArticle.slug;
+    document.getElementById('next-title').textContent = nextArticle.title;
+  } else {
+    nextLink.style.visibility = 'hidden';
+  }
+})();
+</script>
+</body>
+</html>
