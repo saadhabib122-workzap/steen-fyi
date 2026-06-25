@@ -76,10 +76,10 @@ git add -A && git diff --cached --quiet || (git commit -m "deploy: $(date +%H%M)
 
 **What this means in practice:**
 - Every file change made during a session is committed and pushed automatically when Claude finishes responding
-- GitHub Actions then deploys the updated site within ~60 seconds
+- GitHub Pages deploys the updated site within ~60 seconds
 - No manual git commands needed
-- Live site: https://saadhabib122-workzap.github.io/digital-analytics-society/
-- Repo: https://github.com/saadhabib122-workzap/digital-analytics-society
+- Live site: https://saadhabib122-workzap.github.io/steen-fyi/
+- Repo: https://github.com/saadhabib122-workzap/steen-fyi
 
 **If a push fails** (merge conflict, network issue), re-run manually:
 ```bash
