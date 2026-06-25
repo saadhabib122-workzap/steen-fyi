@@ -1,15 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/Saad Habib/.claude/skills/**)",
-      "Read(//c/Program Files/Git/cmd/**)",
-      "Read(//c/Program Files/**)",
-      "PowerShell($env:PATH -split ';'; Write-Host \"---APPDATA---\"; Get-ChildItem \"$env:LOCALAPPDATA\" -Filter \"git.exe\" -Recurse -Depth 5 -ErrorAction SilentlyContinue | Select-Object -First 3 FullName)",
-      "PowerShell(winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements)",
-      "Bash(git --version)",
-      "Bash(git init *)",
-      "Bash(git config *)",
-      "Bash(git add *)"
+      "Read(//c/Users/Saad Habib/.claude/skills/**)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd '/d/Steen.fyi New Website' && git add -A && git diff --cached --quiet || (git commit -m \"deploy: $(date +%H%M)\" && git push)",
+            "shell": "bash",
+            "timeout": 60,
+            "statusMessage": "Deploying to GitHub Pages..."
+          }
+        ]
+      }
     ]
   }
 }
