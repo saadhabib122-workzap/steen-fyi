@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Article — STEEN.FYI</title>
+  <title id="page-title">Article · STEEN.FYI</title>
   <meta name="description" id="page-desc" content="An article by Steen Rasmussen on data, decisions, and leadership.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +86,7 @@
         <p style="font-size:.8rem;color:rgba(247,243,239,.55);letter-spacing:.06em;text-transform:uppercase;font-weight:500">Keynote Speaker · Data, AI &amp; Decision Intelligence</p>
       </div>
     </div>
-    <p style="color:rgba(247,243,239,.72);line-height:1.8;margin-bottom:1.5rem">Steen Rasmussen is a globally recognized keynote speaker with over 20 years of experience at the intersection of data, business, and people. He helps organizations make better decisions — not just faster ones.</p>
+    <p style="color:rgba(247,243,239,.72);line-height:1.8;margin-bottom:1.5rem">Steen Rasmussen is a globally recognized keynote speaker with over 20 years of experience at the intersection of data, business, and people. He helps organizations make better decisions, not just faster ones.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap">
       <a href="booking.html" class="btn btn--amber">Invite Steen to Speak</a>
       <a href="about.html" class="btn btn--outline-light">Learn More</a>
@@ -103,7 +103,9 @@
         <p class="footer__brand-sub">Keynote Speaker · Data, AI &amp; Decision Intelligence.<br>Book Steen for your next event.</p>
         <div style="margin-bottom:1.5rem"><a href="booking.html" class="btn btn--amber">Invite Steen</a></div>
         <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="Spotify"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/></svg></a>
+          <a href="https://open.spotify.com" target="_blank" class="footer__social-link" aria-label="Spotify"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13.5a8 8 0 0 1 7-1"/><path d="M7 16.5a12 12 0 0 1 9-1.5"/><path d="M8 10.5a12 12 0 0 1 8 1"/></svg></a>
+          <a href="https://youtube.com" target="_blank" class="footer__social-link" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.97A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://medium.com" target="_blank" class="footer__social-link" aria-label="Medium"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
           <a href="https://linkedin.com/in/steenrasmussen" target="_blank" class="footer__social-link" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
         </div>
       </div>
@@ -129,7 +131,7 @@
 
   var article = ARTICLES[idx];
 
-  document.getElementById('page-title').textContent = article.title + ' — STEEN.FYI';
+  document.getElementById('page-title').textContent = article.title + ' · STEEN.FYI';
   document.getElementById('page-desc').setAttribute('content', article.excerpt || '');
   document.getElementById('article-date').textContent = article.displayDate;
   document.getElementById('article-title').textContent = article.title;

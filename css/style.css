@@ -308,6 +308,8 @@ h1,h2,h3,h4,h5 {
   padding: calc(var(--nav-h) + 6rem) var(--gutter) clamp(4rem,8vh,7rem);
   color: var(--ivory);
 }
+.hero-photo__content h1,
+.hero-photo__content h2 { color: var(--ivory); }
 
 /* Hero – dark (no photo) */
 .hero-dark {
@@ -734,14 +736,16 @@ h1,h2,h3,h4,h5 {
    ============================================================ */
 
 .cookie-banner {
-  position: fixed; bottom: 1.5rem; right: 1.5rem;
-  max-width: 300px; background: var(--charcoal); color: var(--ivory);
-  padding: 1.5rem; border-radius: 4px;
-  box-shadow: 0 8px 32px rgba(0,0,0,.45);
-  z-index: 300; display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--charcoal); color: var(--ivory);
+  padding: 1rem 2rem;
+  display: none; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 -4px 24px rgba(0,0,0,.3);
+  z-index: 300;
 }
-.cookie-banner.visible { display: block; }
-.cookie-banner p { font-size: var(--t-sm); opacity: .8; margin-bottom: 1rem; line-height: 1.6; }
+.cookie-banner.visible { display: flex; }
+.cookie-banner p { font-size: var(--t-sm); opacity: .8; margin-bottom: 0; line-height: 1.5; }
 
 /* ============================================================
    TAGS
@@ -820,14 +824,18 @@ h1,h2,h3,h4,h5 {
   .stats { grid-template-columns: repeat(3,1fr); gap: 1rem; }
   .form-row { grid-template-columns: 1fr; }
   .footer__top { grid-template-columns: 1fr; gap: 2rem; }
-  .footer__top > :first-child { grid-column: auto; }
+  .footer__top > :first-child { grid-column: auto; text-align: center; }
+  .footer__top > :first-child .footer__brand-sub { margin-left: auto; margin-right: auto; }
+  .footer__top > :first-child > div:first-of-type { display: flex; justify-content: center; }
+  .footer__social { justify-content: center; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
   .hero-photo { min-height: 90vh; }
+  .about-hero__media { order: -1; width: 100% !important; max-width: 320px; margin: 0 auto 2rem; }
 }
 
 @media (max-width: 480px) {
   .stats { grid-template-columns: 1fr; }
   .btn-group { flex-direction: column; align-items: stretch; }
   .btn-group .btn { justify-content: center; }
-  .cookie-banner { left: 1rem; right: 1rem; bottom: 1rem; max-width: none; }
+  .cookie-banner { padding: .875rem 1.25rem; gap: 1rem; }
 }

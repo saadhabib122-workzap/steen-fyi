@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/Saad Habib/.claude/skills/**)"
+      "Read(//c/Users/Saad Habib/.claude/skills/**)",
+      "Bash(npx serve *)",
+      "Bash(node tools/screenshot_pages.js http://localhost:3000)"
     ]
   },
   "hooks": {
