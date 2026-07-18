@@ -65,7 +65,7 @@ var ARTICLES = [
   {
     title: "Delivering a keynote that actually matters",
     slug: "delivering-a-keynote-that-actually-matters",
-    image: "Brand_Assests/Delivering a keynote that actually matters ( artilcles ).webp",
+    image: "Brand_Assests/site/article-delivering-a-keynote.webp",
     date: "2025-12-31",
     displayDate: "31 Dec 2025",
     excerpt: "After twenty years of speaking at conferences from Silicon Valley to Mumbai, the difference isn’t the speaker’s résumé. It’s whether the speaker understands what a keynote actually is.",

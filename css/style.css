@@ -527,6 +527,23 @@ h1,h2,h3,h4,h5 {
 }
 
 /* ============================================================
+   GALLERY GRID
+   ============================================================ */
+
+.gallery-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem;
+  margin-top: 3rem;
+}
+.gallery-grid img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  border-radius: 4px; transition: transform .4s ease;
+}
+.gallery-grid img:hover { transform: scale(1.03); }
+@media (max-width: 768px) {
+  .gallery-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+/* ============================================================
    GRIDS
    ============================================================ */
 
