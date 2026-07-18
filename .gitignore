@@ -4,3 +4,10 @@ node_modules/
 credentials.json
 token.json
 *.log
+
+# Working files from asset sourcing — not needed by the deployed site
+Brand_Assests/assets.zip
+Brand_Assests/assets_extracted/
+Brand_Assests/assets_converted/
+Brand_Assests/contact_sheets/
+Steen's current website/bands/

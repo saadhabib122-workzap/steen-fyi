@@ -520,6 +520,11 @@ h1,h2,h3,h4,h5 {
 .feature-card__body {
   font-size: var(--t-sm); color: rgba(247,243,239,.62); line-height: 1.7; flex: 1;
 }
+.feature-card__cover {
+  aspect-ratio: 16/10; border-radius: 4px;
+  background-size: cover; background-position: center;
+  margin-bottom: .25rem;
+}
 
 /* ============================================================
    GRIDS
@@ -560,6 +565,7 @@ h1,h2,h3,h4,h5 {
 .on-dark .testimonial__role { color: rgba(247,243,239,.55); }
 .testimonial__meta { display: flex; align-items: center; gap: .75rem; }
 .testimonial__logo { width: 34px; height: 34px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+.testimonial__avatar { width: 44px; height: 44px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
 
 /* ============================================================
    SPLIT LAYOUT
@@ -619,6 +625,11 @@ h1,h2,h3,h4,h5 {
   width: 48px; height: 48px; border-radius: 50%;
   background: linear-gradient(135deg,var(--slate),#0d1e37);
   display: flex; align-items: center; justify-content: center;
+  margin-bottom: .5rem;
+}
+.about-col__cover {
+  aspect-ratio: 16/10; border-radius: 4px;
+  background-size: cover; background-position: center;
   margin-bottom: .5rem;
 }
 .about-col h3 {

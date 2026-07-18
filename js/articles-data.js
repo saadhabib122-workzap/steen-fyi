@@ -11,7 +11,7 @@ var ARTICLES = [
   {
     title: "The Urgency Playbook: 10 Practical Methods for Decisive Action",
     slug: "the-urgency-playbook-10-practical-methods-for-decisive-action",
-    image: "Brand_Assests/The Urgency Playbook 10 Practical Methods for Decisive Action.webp",
+    image: "Brand_Assests/site/article-urgency-playbook.webp",
     date: "2026-06-13",
     displayDate: "13 Jun 2026",
     excerpt: "Speed is a currency. Yet many of us find ourselves trapped in professional quicksand, sinking slowly into indecision, endless analysis, and the false comfort of inaction.",
@@ -20,7 +20,7 @@ var ARTICLES = [
   {
     title: "Why analytics is genuinely hard to learn",
     slug: "why-analytics-is-genuinely-hard-to-learn",
-    image: "Brand_Assests/Why analytics is genuinely hard to learn ( artilces ).webp",
+    image: "Brand_Assests/site/article-why-analytics-hard.webp",
     date: "2026-05-31",
     displayDate: "31 May 2026",
     excerpt: "Most people dramatically underestimate where analytics sits on the difficulty scale. By four key measures (cognitive load, prerequisite depth, feedback loop quality, and abstraction level) analytics is hard.",
@@ -29,7 +29,7 @@ var ARTICLES = [
   {
     title: "The Shortcut Doctrine",
     slug: "the-shortcut-doctrine",
-    image: "Brand_Assests/THE SHORTCUT DOCTRINE ( artilces ).webp",
+    image: "Brand_Assests/site/article-shortcut-doctrine.webp",
     date: "2026-04-30",
     displayDate: "30 Apr 2026",
     excerpt: "We confuse difficulty with value. A shortcut is not a compromise. It is a commitment to the thing that actually matters, at the expense of everything that doesn’t.",
@@ -47,7 +47,7 @@ var ARTICLES = [
   {
     title: "Fun at work is not a perk",
     slug: "fun-at-work-is-not-a-perk",
-    image: "Brand_Assests/Serious about fun ( Artilces ).webp",
+    image: "Brand_Assests/site/article-fun-at-work.webp",
     date: "2026-02-28",
     displayDate: "28 Feb 2026",
     excerpt: "Nobody puts “must enjoy laughing” in a job description. And yet ask anyone about the best job they’ve ever had. The work itself rarely comes up first.",
@@ -56,7 +56,7 @@ var ARTICLES = [
   {
     title: "The Five Knives to Get Unstuck",
     slug: "the-five-knives-to-get-unstuck",
-    image: "Brand_Assests/5 tips to get from stuck to unstuck.( articles ).webp",
+    image: "Brand_Assests/site/article-five-knives.webp",
     date: "2026-01-13",
     displayDate: "13 Jan 2026",
     excerpt: "Most organizations hire fixers when they’re already six months past stuck. Decision paralysis is the problem, not a symptom of it. Here are five ways to short-circuit it.",
@@ -74,7 +74,7 @@ var ARTICLES = [
   {
     title: "Introducing the fractal digital fixer",
     slug: "introducing-the-fractal-digital-fixer",
-    image: "Brand_Assests/Introducing the “fractal digital fixer” ( articles ).webp",
+    image: "Brand_Assests/site/article-fractal-digital-fixer.webp",
     date: "2025-11-24",
     displayDate: "24 Nov 2025",
     excerpt: "When you raise the black flag and sail fractal, you don’t just gain freedom. You become something the market desperately needs but doesn’t have a name for yet. A fixer.",
@@ -92,7 +92,7 @@ var ARTICLES = [
   {
     title: "Why I Left My Good Job to Go Fractal",
     slug: "why-i-left-my-good-job-to-go-fractal",
-    image: "Brand_Assests/Why I Left My Good Job to Go Fractal ( Articles ).webp",
+    image: "Brand_Assests/site/article-why-i-left-good-job.webp",
     date: "2025-09-29",
     displayDate: "29 Sept 2025",
     excerpt: "A Pirate’s Manifesto. “Why join the Navy when you can be a pirate?” Six months ago, I decided to walk away from a more than excellent job at IIH Nordic.",
@@ -110,7 +110,7 @@ var ARTICLES = [
   {
     title: "Treating Decisions as Assets, Not To-Do Items",
     slug: "treating-decisions-as-assets-not-to-do-items",
-    image: "Brand_Assests/Treating Decisions as Assets, Not To-Do Items.webp",
+    image: "Brand_Assests/site/article-treating-decisions-as-assets.webp",
     date: "2025-06-09",
     displayDate: "9 Jun 2025",
     excerpt: "In the race to become faster, more agile, and more effective, maybe the issue isn’t our productivity systems. Maybe it’s the way we think about decisions.",
