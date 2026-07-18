@@ -693,6 +693,9 @@ h1,h2,h3,h4,h5 {
   padding: 4.5rem 0 2rem;
 }
 [data-theme="dark"] .footer { background: #0A0A0A; }
+.footer__inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter);
+}
 
 .footer__top {
   display: grid; grid-template-columns: 2fr 1fr 1fr;
