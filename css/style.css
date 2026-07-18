@@ -283,7 +283,7 @@ h1,h2,h3,h4,h5 {
    ============================================================ */
 
 .hero-photo {
-  position: relative; min-height: 100vh;
+  position: relative; min-height: min(100vh, 820px);
   display: flex; align-items: flex-end; overflow: hidden;
 }
 .hero-photo__bg {
@@ -432,11 +432,11 @@ h1,h2,h3,h4,h5 {
   gap: clamp(2rem,4vw,4rem); flex-wrap: wrap; padding: 0 var(--gutter);
 }
 .logo-strip__logo {
-  height: 26px; width: auto; opacity: .35; filter: grayscale(1);
-  transition: opacity .25s ease, filter .25s ease;
+  height: 28px; width: auto; opacity: .9;
+  padding: .6rem 1rem; background: var(--white); border-radius: 6px;
+  transition: opacity .25s ease, transform .25s ease;
 }
-.logo-strip__logo:hover { opacity: .65; filter: grayscale(0); }
-[data-theme="dark"] .logo-strip__logo { filter: grayscale(1) invert(1); }
+.logo-strip__logo:hover { opacity: 1; transform: translateY(-1px); }
 
 .logo-text-item {
   font-family: var(--font-sans); font-weight: 700; font-size: 1.05rem;
