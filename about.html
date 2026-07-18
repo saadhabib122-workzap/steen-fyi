@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Steen · STEEN.FYI</title>
   <meta name="description" content="Steen Rasmussen is a global authority on digital analytics and founder of Data Analytics Society. 20+ years transforming data into business strategy.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
       </div>
       <div class="anim d2 about-hero__media" style="flex-shrink:0;width:clamp(260px,40%,420px)">
         <div style="border-radius:4px;overflow:hidden;aspect-ratio:3/4;background:var(--bg-dark);position:relative">
-          <img src="Brand_Assests/02_steen_portrait_linkedin_card.png" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%">
+          <img src="Brand_Assests/Steen's intro image from about me page section 1.webp" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%">
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,21,37,1) 0%,rgba(10,21,37,.85) 30%,rgba(10,21,37,.3) 52%,transparent 65%);pointer-events:none"></div>
         </div>
       </div>
@@ -112,8 +112,8 @@
         <a href="booking.html" class="btn btn--primary" style="align-self:flex-start;margin-top:auto">Invite Steen</a>
       </div>
       <div class="about-col anim d2">
-        <div class="about-col__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        <div class="about-col__icon" style="background:var(--ivory);padding:6px;overflow:hidden">
+          <img src="Brand_Assests/DAS logo.webp" alt="Data Analytics Society" style="width:100%;height:100%;object-fit:contain;border-radius:50%">
         </div>
         <h3>Community</h3>
         <span class="amber-line"></span>
@@ -185,22 +185,23 @@
       <h2 class="sh__title">Steen Has Been Speaking Around the World</h2>
       <p class="sh__sub">From Silicon Valley to Munich, Tirana to Tokyo, Steen brings actionable analytics insight to audiences across industries and continents.</p>
     </div>
-    <div class="anim d1" style="margin-top:3rem;background:linear-gradient(135deg,var(--bg-dark),#0d1e37);border-radius:8px;padding:3rem;text-align:center">
-      <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;max-width:700px;margin:0 auto">
-        <span class="tag">Silicon Valley, USA</span>
-        <span class="tag">Munich, Germany</span>
-        <span class="tag">Tirana, Albania</span>
-        <span class="tag">Amsterdam, Netherlands</span>
-        <span class="tag">Copenhagen, Denmark</span>
-        <span class="tag">Milan, Italy</span>
-        <span class="tag">Mumbai, India</span>
-        <span class="tag">Budapest, Hungary</span>
-        <span class="tag">London, UK</span>
-        <span class="tag">Brussels, Belgium</span>
-        <span class="tag">Stockholm, Sweden</span>
-        <span class="tag">Warsaw, Poland</span>
-      </div>
+    <div class="anim d1 world-map" id="world-map">
+      <div class="world-map__clip"><div class="world-map__pattern"></div></div>
+      <button class="world-map__pin" style="left:16.1%;top:29.2%" type="button"><span class="world-map__pin-label">Silicon Valley, USA</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:53.2%;top:23.3%" type="button"><span class="world-map__pin-label">Munich, Germany</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:55.5%;top:27.0%" type="button"><span class="world-map__pin-label">Tirana, Albania</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:51.4%;top:20.9%" type="button"><span class="world-map__pin-label">Amsterdam, Netherlands</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:53.5%;top:19.1%" type="button"><span class="world-map__pin-label">Copenhagen, Denmark</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:52.6%;top:24.7%" type="button"><span class="world-map__pin-label">Milan, Italy</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:70.2%;top:39.4%" type="button"><span class="world-map__pin-label">Mumbai, India</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:55.3%;top:23.6%" type="button"><span class="world-map__pin-label">Budapest, Hungary</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:50.0%;top:21.4%" type="button"><span class="world-map__pin-label">London, UK</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:51.2%;top:21.8%" type="button"><span class="world-map__pin-label">Brussels, Belgium</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:55.0%;top:17.0%" type="button"><span class="world-map__pin-label">Stockholm, Sweden</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:55.8%;top:21.0%" type="button"><span class="world-map__pin-label">Warsaw, Poland</span><span class="world-map__pin-dot"></span></button>
+      <button class="world-map__pin" style="left:88.8%;top:30.2%" type="button"><span class="world-map__pin-label">Tokyo, Japan</span><span class="world-map__pin-dot"></span></button>
     </div>
+    <p class="anim d2" style="text-align:center;color:var(--text-muted);font-size:.85rem;margin-top:1.5rem">13 cities and counting: tap a pin to see where.</p>
   </div>
 </section>
 
@@ -234,6 +235,6 @@
   </div>
 </footer>
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2"></script>
 </body>
 </html>

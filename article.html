@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Article · STEEN.FYI</title>
   <meta name="description" id="page-desc" content="An article by Steen Rasmussen on data, decisions, and leadership.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,6 +56,11 @@
   </div>
 </section>
 
+<!-- ARTICLE COVER -->
+<div class="container" style="max-width:900px;margin-top:-2.5rem;position:relative;z-index:2">
+  <img id="article-cover" alt="" style="display:none;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;box-shadow:var(--shadow-lg)">
+</div>
+
 <!-- ARTICLE BODY -->
 <div class="article-body" id="article-content">
   <p style="color:var(--text-muted);font-style:italic">Loading article...</p>
@@ -80,7 +85,7 @@
   <div class="container" style="max-width:760px">
     <div style="display:flex;gap:1.5rem;align-items:center;padding-bottom:2rem;border-bottom:1px solid rgba(247,243,239,.08);margin-bottom:2rem">
       <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--amber)">
-        <img src="Brand_Assests/02_steen_portrait_linkedin_card.png" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:top">
+        <img src="Brand_Assests/Steen's intro image from about me page section 1.webp" alt="Steen Rasmussen" style="width:100%;height:100%;object-fit:cover;object-position:top">
       </div>
       <div>
         <p style="font-family:var(--font-serif);font-weight:700;font-size:var(--t-xl);color:var(--ivory)">Steen Rasmussen</p>
@@ -117,8 +122,8 @@
 </footer>
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
 
-<script src="js/articles-data.js"></script>
-<script src="js/script.js"></script>
+<script src="js/articles-data.js?v=2"></script>
+<script src="js/script.js?v=2"></script>
 <script>
 (function () {
   var params = new URLSearchParams(window.location.search);
@@ -136,6 +141,13 @@
   document.getElementById('article-date').textContent = article.displayDate;
   document.getElementById('article-title').textContent = article.title;
   document.getElementById('article-excerpt').textContent = article.excerpt || '';
+
+  if (article.image) {
+    var coverImg = document.getElementById('article-cover');
+    coverImg.src = article.image;
+    coverImg.alt = article.title;
+    coverImg.style.display = 'block';
+  }
 
   // Simple markdown-to-HTML renderer
   function renderMarkdown(text) {

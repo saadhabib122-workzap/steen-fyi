@@ -2,6 +2,7 @@ var ARTICLES = [
   {
     title: "You don’t own your life alone",
     slug: "you-dont-own-your-life-alone",
+    image: "Brand_Assests/you don't own your life ( artiolces ).webp",
     date: "2026-06-20",
     displayDate: "20 Jun 2026",
     excerpt: "We think we’re choosing when we’re actually just watching the calendar make the choice for us. Ownership of your life sounds like sovereignty. It’s also a fantasy.",
@@ -10,6 +11,7 @@ var ARTICLES = [
   {
     title: "The Urgency Playbook: 10 Practical Methods for Decisive Action",
     slug: "the-urgency-playbook-10-practical-methods-for-decisive-action",
+    image: "Brand_Assests/The Urgency Playbook 10 Practical Methods for Decisive Action.webp",
     date: "2026-06-13",
     displayDate: "13 Jun 2026",
     excerpt: "Speed is a currency. Yet many of us find ourselves trapped in professional quicksand, sinking slowly into indecision, endless analysis, and the false comfort of inaction.",
@@ -18,14 +20,16 @@ var ARTICLES = [
   {
     title: "Why analytics is genuinely hard to learn",
     slug: "why-analytics-is-genuinely-hard-to-learn",
+    image: "Brand_Assests/Why analytics is genuinely hard to learn ( artilces ).webp",
     date: "2026-05-31",
     displayDate: "31 May 2026",
-    excerpt: "Most people dramatically underestimate where analytics sits on the difficulty scale. By four key measures — cognitive load, prerequisite depth, feedback loop quality, and abstraction level — analytics is hard.",
+    excerpt: "Most people dramatically underestimate where analytics sits on the difficulty scale. By four key measures (cognitive load, prerequisite depth, feedback loop quality, and abstraction level) analytics is hard.",
     body: "Learning is hard.\n\nBut some things are harder than others. And most people dramatically underestimate where analytics sits on that scale.\n\nNot implementation. Analysis.\n\nThere’s a reasonably well-established framework for why some skills are harder to acquire than others. It comes down to four things: cognitive load, prerequisite depth, feedback loop quality, and abstraction level.\n\nCognitive load is how much you have to hold in your head simultaneously. Prerequisite depth is how much you need to already know before the new thing makes sense. Feedback loop quality is how quickly and clearly you find out if you were right or wrong. Abstraction is how far removed you are from the thing you’re actually trying to understand.\n\nBy all four measures, analytics is hard.\n\n## The cognitive load issues\n\nYou’re not looking at stable data.\n\nYou’re looking for variations in a liquid changing mass where every element interacts with every other element. A traffic drop could be a broken tag, a seasonal pattern, a campaign ending, a competitor move, or five things happening at once.\n\nYou can’t evaluate any single explanation without holding all the others in your head simultaneously.\n\nThat’s not just complicated.\n\nThat’s a genuinely high cognitive load in the technical sense.\n\nThe prerequisite problem runs deeper than most people acknowledge. It’s not just knowing what a session or a funnel is. You need enough domain knowledge about the specific business to know what normal looks like. Which means analytics has a double prerequisite layer. You need to understand analytics and the business you’re applying it to.\n\nSwap industries and you start over. Not completely, but enough to matter.\n\n## The feedback loop problem\n\nThe data gives you fast feedback. You can know within hours or even minutes that something changed. But whether your interpretation of that change was correct might take weeks to discover. And often you never find out at all.\n\nThe business moved on. The next campaign started. The context shifted. You can be wrong about causation indefinitely and never get clean confirmation.\n\n## The abstraction problem\n\nYou are never looking at behavior. You are looking at a record of behavior. A number that represents an action that a human took, filtered through a tracking implementation, aggregated with thousands of other actions, and then presented to you as a metric.\n\nEvery step in that chain involves translation. And every translation introduces distance from reality.\n\nMost other difficult skills keep you closer to the thing itself. A surgeon operates on an actual body. A chess player moves actual pieces. In analytics, the raw material is always one step removed. You’re reading shadows on a wall and trying to describe what cast them.\n\nThis matters because it means you can be confidently wrong in ways that feel right.\n\n## The data quality problem\n\nThe data quality in analytics is significantly below what you’d find in, say, medical diagnostics. A broken tracking tag looks identical to a genuine traffic drop. A consent banner change can silently remove 40% of your data with no error message.\n\nIn medicine, you get a second signal. Clinical observation runs alongside lab results. In analytics, the data is often the only window into reality. If it’s broken, you’re blind and don’t know it.\n\n## The population problem\n\nYou’re never looking at a user. You’re looking at a superposition of overlapping populations. Different intent, different context, different devices, different relationships to the product. All collapsed into a single number.\n\nA 3% conversion rate could be 30% conversion from high-intent visitors dragging up a 1% baseline from everyone else. The aggregate is real but potentially meaningless without segmentation.\n\n## Four problems, not one\n\nSo you end up with four problems layered on top of each other.\n\nIs the data trustworthy? Which population am I actually looking at? What pattern is present? What does that mean for behavior?\n\nMost analytics training addresses problem three. Most analytics work lives in problem three. Problems one and two are where the actual leverage is.\n\n## Where this leaves analytics\n\nProbably top 20% of human skills to do well. Comparable in difficulty profile to medical diagnosis, with business domain knowledge replacing biological knowledge.\n\nHarder than chess. Harder than a spoken foreign language. Not harder than becoming a great writer or a psychiatrist, but uncomfortably close.\n\nAnd unlike bomb disposal, the difficulty is chronic rather than acute. No hard deadline. No binary outcome. Just ambiguity, indefinitely.\n\nNone of which stops organizations from assuming that if you give people data, they’ll naturally know what to do with it.\n\nLearning to use data well is like learning a new language, a new type of math, consumer psychology, and a new habit at the same time.\n\nYou don’t just become data-driven by having data.\n\nIt’s a process. A slow one. And it starts with taking the difficulty seriously."
   },
   {
     title: "The Shortcut Doctrine",
     slug: "the-shortcut-doctrine",
+    image: "Brand_Assests/THE SHORTCUT DOCTRINE ( artilces ).webp",
     date: "2026-04-30",
     displayDate: "30 Apr 2026",
     excerpt: "We confuse difficulty with value. A shortcut is not a compromise. It is a commitment to the thing that actually matters, at the expense of everything that doesn’t.",
@@ -34,6 +38,7 @@ var ARTICLES = [
   {
     title: "You already know which one is better",
     slug: "you-already-know-which-one-is-better-the-high-cost-of-easy-choices",
+    image: "Brand_Assests/You already know which one is better - the high cost of easy choices ( articles ).webp",
     date: "2026-03-27",
     displayDate: "27 Mar 2026",
     excerpt: "You’re standing at the bottom of a shopping mall. Stairs on the left. Escalator on the right. You know which one is better for you. And yet. Roughly 90% of people choose the escalator.",
@@ -42,6 +47,7 @@ var ARTICLES = [
   {
     title: "Fun at work is not a perk",
     slug: "fun-at-work-is-not-a-perk",
+    image: "Brand_Assests/Serious about fun ( Artilces ).webp",
     date: "2026-02-28",
     displayDate: "28 Feb 2026",
     excerpt: "Nobody puts “must enjoy laughing” in a job description. And yet ask anyone about the best job they’ve ever had. The work itself rarely comes up first.",
@@ -50,6 +56,7 @@ var ARTICLES = [
   {
     title: "The Five Knives to Get Unstuck",
     slug: "the-five-knives-to-get-unstuck",
+    image: "Brand_Assests/5 tips to get from stuck to unstuck.( articles ).webp",
     date: "2026-01-13",
     displayDate: "13 Jan 2026",
     excerpt: "Most organizations hire fixers when they’re already six months past stuck. Decision paralysis is the problem, not a symptom of it. Here are five ways to short-circuit it.",
@@ -58,6 +65,7 @@ var ARTICLES = [
   {
     title: "Delivering a keynote that actually matters",
     slug: "delivering-a-keynote-that-actually-matters",
+    image: "Brand_Assests/Delivering a keynote that actually matters ( artilcles ).webp",
     date: "2025-12-31",
     displayDate: "31 Dec 2025",
     excerpt: "After twenty years of speaking at conferences from Silicon Valley to Mumbai, the difference isn’t the speaker’s résumé. It’s whether the speaker understands what a keynote actually is.",
@@ -66,6 +74,7 @@ var ARTICLES = [
   {
     title: "Introducing the fractal digital fixer",
     slug: "introducing-the-fractal-digital-fixer",
+    image: "Brand_Assests/Introducing the “fractal digital fixer” ( articles ).webp",
     date: "2025-11-24",
     displayDate: "24 Nov 2025",
     excerpt: "When you raise the black flag and sail fractal, you don’t just gain freedom. You become something the market desperately needs but doesn’t have a name for yet. A fixer.",
@@ -74,6 +83,7 @@ var ARTICLES = [
   {
     title: "When everything feels like a priority, nothing actually is",
     slug: "when-everything-feels-like-a-priority-nothing-actually-is",
+    image: "Brand_Assests/When everything feels like a priority, nothing actually is ( Artilces ).webp",
     date: "2025-10-31",
     displayDate: "31 Oct 2025",
     excerpt: "Too many options don’t give us freedom. They paralyze us. The answer isn’t better organization or a fancier to-do app. It’s subtraction.",
@@ -82,14 +92,16 @@ var ARTICLES = [
   {
     title: "Why I Left My Good Job to Go Fractal",
     slug: "why-i-left-my-good-job-to-go-fractal",
+    image: "Brand_Assests/Why I Left My Good Job to Go Fractal ( Articles ).webp",
     date: "2025-09-29",
     displayDate: "29 Sept 2025",
     excerpt: "A Pirate’s Manifesto. “Why join the Navy when you can be a pirate?” Six months ago, I decided to walk away from a more than excellent job at IIH Nordic.",
-    body: "A Pirate’s Manifesto.\n\n“Why join the Navy when you can be a pirate?” — Steve Jobs\n\nSix months ago, I decided to walk away from a more than excellent job at IIH Nordic.\n\nA month ago I walked out.\n\nGood salary, respected company, a four day workweek, clear career path, co-founded it. Everything that conventional wisdom tells us to value. My colleagues thought I’d lost my mind. My partner was concerned for my sanity.\n\nEven I questioned the decision in those quiet 3 AM moments we all know too well.\n\nWell, sometimes the biggest risk is not taking one at all.\n\n## The navy mindset: comfort in structure\n\nCorporate life is seductive in its predictability.\n\nAt IIH Nordic, I knew exactly what was expected of me. I had a title, was part of a team, a manager, and a neat little box on the org chart. The Navy offers structure, hierarchy, and the comfort of knowing your place in the grand machine.\n\nFor years, this felt like winning. I was doing my part, hitting my KPIs, and collecting the accolades that come with being a “high performer.” But somewhere along the way, I realized I wasn’t really building anything new. I was just maintaining a vision.\n\nThe Navy teaches you to follow orders, execute strategies, and optimize within existing frameworks. These are valuable skills, but they come with invisible handcuffs.\n\nYou become excellent at playing by rules you didn’t write, solving problems you didn’t choose, using tools someone else selected.\n\n## The pirate’s call: freedom to create\n\nGoing fractal means operating as an independent, multifaceted professional across multiple domains. It’s the modern equivalent of raising the black flag.\n\nPirates don’t ask permission. They identify opportunities, assemble crews, and chart their own course. They’re comfortable with uncertainty because they understand something the Navy doesn’t: in a rapidly changing world, adaptability beats predictability every time.\n\nGoing fractal means portfolio thinking over position thinking. Network effects over hierarchy. Value creation over value capture. Learning velocity over expertise depth.\n\n## The economics of independence\n\nLet’s be brutally honest about the math.\n\nIn the short term, leaving IIH Nordic meant giving up a guaranteed paycheck, benefits, and the psychological comfort of employment. But the economics of independence follow a different logic.\n\nAs an employee, your compensation is capped by someone else’s budget and risk tolerance. As a fractal professional, your compensation is limited only by the value you can create and capture.\n\nThe corporate world is optimized for predictable, incremental value creation. But we live in an exponential age where the biggest opportunities come from connecting disparate domains, identifying emerging patterns, and moving faster than institutions can.\n\n## Lessons from a month of piracy\n\nThe transition hasn’t been smooth yet. Independence is messy, uncertain, and occasionally terrifying. But it’s also been the most intellectually stimulating and personally rewarding period of my career.\n\nI’ve learned that most of what we call “job security” is actually just institutionalized risk. When your income depends on a single employer, you’re not diversified, you’re concentrated.\n\nI’ve also discovered that the skills that made me successful in corporate environments, strategic thinking, execution capability, and relationship building, are even more valuable in the open market.\n\n## The future belongs to pirates\n\nWe’re living through the beginning of the collapse of the industrial employment model. The half-life of skills is shrinking, organizational structures are flattening, and the most interesting work happens at the intersections between traditional domains.\n\nIn this environment, the Navy mindset becomes a liability.\n\nCompanies need people who can think like owners, not employees. They need professionals who can navigate ambiguity, build from scratch, and take responsibility for outcomes rather than just activities.\n\nFor those still in the Navy: don’t leap immediately. Wait. Think. And maybe start building your pirate ship while you’re still in the navy.\n\nThe question isn’t whether the future of work will be more fractal. It’s whether you’ll be ready for it.\n\nBecause some of us were born to sail under our own flag."
+    body: "A Pirate’s Manifesto.\n\n“Why join the Navy when you can be a pirate?” - Steve Jobs\n\nSix months ago, I decided to walk away from a more than excellent job at IIH Nordic.\n\nA month ago I walked out.\n\nGood salary, respected company, a four day workweek, clear career path, co-founded it. Everything that conventional wisdom tells us to value. My colleagues thought I’d lost my mind. My partner was concerned for my sanity.\n\nEven I questioned the decision in those quiet 3 AM moments we all know too well.\n\nWell, sometimes the biggest risk is not taking one at all.\n\n## The navy mindset: comfort in structure\n\nCorporate life is seductive in its predictability.\n\nAt IIH Nordic, I knew exactly what was expected of me. I had a title, was part of a team, a manager, and a neat little box on the org chart. The Navy offers structure, hierarchy, and the comfort of knowing your place in the grand machine.\n\nFor years, this felt like winning. I was doing my part, hitting my KPIs, and collecting the accolades that come with being a “high performer.” But somewhere along the way, I realized I wasn’t really building anything new. I was just maintaining a vision.\n\nThe Navy teaches you to follow orders, execute strategies, and optimize within existing frameworks. These are valuable skills, but they come with invisible handcuffs.\n\nYou become excellent at playing by rules you didn’t write, solving problems you didn’t choose, using tools someone else selected.\n\n## The pirate’s call: freedom to create\n\nGoing fractal means operating as an independent, multifaceted professional across multiple domains. It’s the modern equivalent of raising the black flag.\n\nPirates don’t ask permission. They identify opportunities, assemble crews, and chart their own course. They’re comfortable with uncertainty because they understand something the Navy doesn’t: in a rapidly changing world, adaptability beats predictability every time.\n\nGoing fractal means portfolio thinking over position thinking. Network effects over hierarchy. Value creation over value capture. Learning velocity over expertise depth.\n\n## The economics of independence\n\nLet’s be brutally honest about the math.\n\nIn the short term, leaving IIH Nordic meant giving up a guaranteed paycheck, benefits, and the psychological comfort of employment. But the economics of independence follow a different logic.\n\nAs an employee, your compensation is capped by someone else’s budget and risk tolerance. As a fractal professional, your compensation is limited only by the value you can create and capture.\n\nThe corporate world is optimized for predictable, incremental value creation. But we live in an exponential age where the biggest opportunities come from connecting disparate domains, identifying emerging patterns, and moving faster than institutions can.\n\n## Lessons from a month of piracy\n\nThe transition hasn’t been smooth yet. Independence is messy, uncertain, and occasionally terrifying. But it’s also been the most intellectually stimulating and personally rewarding period of my career.\n\nI’ve learned that most of what we call “job security” is actually just institutionalized risk. When your income depends on a single employer, you’re not diversified, you’re concentrated.\n\nI’ve also discovered that the skills that made me successful in corporate environments, strategic thinking, execution capability, and relationship building, are even more valuable in the open market.\n\n## The future belongs to pirates\n\nWe’re living through the beginning of the collapse of the industrial employment model. The half-life of skills is shrinking, organizational structures are flattening, and the most interesting work happens at the intersections between traditional domains.\n\nIn this environment, the Navy mindset becomes a liability.\n\nCompanies need people who can think like owners, not employees. They need professionals who can navigate ambiguity, build from scratch, and take responsibility for outcomes rather than just activities.\n\nFor those still in the Navy: don’t leap immediately. Wait. Think. And maybe start building your pirate ship while you’re still in the navy.\n\nThe question isn’t whether the future of work will be more fractal. It’s whether you’ll be ready for it.\n\nBecause some of us were born to sail under our own flag."
   },
   {
     title: "Why we love revolution over evolution",
     slug: "why-we-love-revolution-over-evolution",
+    image: "Brand_Assests/Why we love revolution over evolution ( artilces).webp",
     date: "2025-09-02",
     displayDate: "2 Sept 2025",
     excerpt: "Your brain is lazy. That’s the hard science. And that’s why we’re all secretly hoping for our productivity fairy godmother to wave her magic wand and fix everything.",
@@ -98,6 +110,7 @@ var ARTICLES = [
   {
     title: "Treating Decisions as Assets, Not To-Do Items",
     slug: "treating-decisions-as-assets-not-to-do-items",
+    image: "Brand_Assests/Treating Decisions as Assets, Not To-Do Items.webp",
     date: "2025-06-09",
     displayDate: "9 Jun 2025",
     excerpt: "In the race to become faster, more agile, and more effective, maybe the issue isn’t our productivity systems. Maybe it’s the way we think about decisions.",
