@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-accent="purple">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles · STEEN.FYI</title>
   <meta name="description" content="Explore Steen Rasmussen's articles: a fusion of data and humor where analytical insights meet engaging narratives.">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script>(function(){var t=localStorage.getItem('steen-theme');if(t)document.documentElement.setAttribute('data-theme',t)})()</script>
 </head>
 <body>
@@ -48,7 +48,7 @@
   <div class="container">
     <p class="eyebrow anim" style="color:var(--amber)"><span></span>Writing</p>
     <h1 style="font-size:var(--t-5xl);color:var(--ivory);max-width:600px;margin-bottom:1rem" class="anim d1">Articles</h1>
-    <p class="lead anim d2" style="color:rgba(247,243,239,.72);max-width:540px">A fusion of data and humor where analytical insights meet engaging narratives. Practical thinking on decisions, leadership, and the human side of data.</p>
+    <p class="lead anim d2" style="color:rgba(245,245,247,.72);max-width:540px">A fusion of data and humor where analytical insights meet engaging narratives. Practical thinking on decisions, leadership, and the human side of data.</p>
   </div>
 </section>
 
@@ -84,17 +84,17 @@
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
 
 <script src="js/articles-data.js?v=7"></script>
-<script src="js/script.js?v=7"></script>
+<script src="js/script.js?v=8"></script>
 <script>
 (function () {
   var list = document.getElementById('articles-list');
   if (!list || !ARTICLES) return;
 
   var gradients = [
-    'linear-gradient(135deg,#1B2D4F 0%,#0d1e37 100%)',
-    'linear-gradient(135deg,#2a1f0f 0%,#1B2D4F 100%)',
-    'linear-gradient(135deg,#1B2D4F 0%,#2a1f0f 100%)',
-    'linear-gradient(135deg,#0d1e37 0%,#1a0e04 100%)',
+    'linear-gradient(135deg,#000000 0%,#0a0a0a 100%)',
+    'linear-gradient(135deg,#0a0a0a 0%,#000000 100%)',
+    'linear-gradient(135deg,#000000 0%,#0a0a0a 100%)',
+    'linear-gradient(135deg,#0a0a0a 0%,#050505 100%)',
   ];
 
   var html = ARTICLES.map(function (a, i) {
