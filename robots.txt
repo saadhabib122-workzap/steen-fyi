@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saadhabib122-workzap.github.io/steen-fyi/sitemap.xml
