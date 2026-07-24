@@ -628,6 +628,7 @@ h1,h2,h3,h4,h5 {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
   max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter);
 }
+.cta-cards--three { grid-template-columns: repeat(3, 1fr); }
 .cta-card {
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.09);
@@ -845,8 +846,9 @@ h1,h2,h3,h4,h5 {
 .world-map__clip { position: absolute; inset: 0; border-radius: 24px; overflow: hidden; }
 .world-map__pattern {
   position: absolute; inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .world-map__pin {
   position: absolute; transform: translate(-50%,-50%);
@@ -930,7 +932,7 @@ h1,h2,h3,h4,h5 {
   .grid-articles { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; }
   .split--flip .split__media { order: 0; }
-  .cta-cards { grid-template-columns: 1fr; }
+  .cta-cards, .cta-cards--three { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(3,1fr); gap: 1rem; }
   .form-row { grid-template-columns: 1fr; }
   .footer__top { grid-template-columns: 1fr; gap: 2rem; }
