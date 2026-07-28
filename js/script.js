@@ -115,24 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ─── World Map Pins ──────────────────────────────────────────────────────────
-
-  var worldMap = document.getElementById('world-map');
-  if (worldMap) {
-    var pins = worldMap.querySelectorAll('.world-map__pin');
-    pins.forEach(function (pin) {
-      pin.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var wasActive = pin.classList.contains('is-active');
-        pins.forEach(function (p) { p.classList.remove('is-active'); });
-        if (!wasActive) pin.classList.add('is-active');
-      });
-    });
-    document.addEventListener('click', function () {
-      pins.forEach(function (p) { p.classList.remove('is-active'); });
-    });
-  }
-
   // ─── Contact/Booking Form Submit ─────────────────────────────────────────────
 
   document.querySelectorAll('.site-form').forEach(function (form) {
