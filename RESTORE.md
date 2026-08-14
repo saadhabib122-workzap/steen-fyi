@@ -75,7 +75,7 @@ The main site is fully static HTML/CSS/JS — no API keys, no build secrets.
 
 | What | How to restore |
 |---|---|
-| **Git identity** | `git config --global user.name "Saad"` and `git config --global user.email "saadhabib122@gmail.com"` |
+| **Git identity** | This repo has a **local** override in `.git/config` (`Saad Habib` / `office@mnty.ch`) which lives on `D:` and restores itself — all commits here use it. Only the global identity is wiped: `git config --global user.name "Saad"` and `git config --global user.email "saadhabib122@gmail.com"` |
 | **GitHub push access** | Git uses `credential.helper=manager` (Git Credential Manager); the stored token is wiped. Easiest fix: `gh auth login` (previous scopes: `gist`, `read:org`, `repo`, `workflow`). Otherwise the first `git push` will prompt for browser auth. |
 | **Claude Code** | User config at `C:\Users\<you>\.claude\` is wiped (auth, settings, session history, skills). Re-login on first launch. Project-level `.claude/settings.json` and the vendored `impeccable` skill under `.agents/` are on `D:` and tracked in git — those survive. |
 | **Google Drive MCP connector** | Needs re-authorization via claude.ai connector settings. |
