@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // client-side with a visible message instead of silently failing.
 
   var FORM_ENDPOINTS = {
-    contact: 'https://formspree.io/f/REPLACE_WITH_CONTACT_FORM_ID',
-    booking: 'https://formspree.io/f/REPLACE_WITH_BOOKING_FORM_ID'
+    booking: 'https://formspree.io/f/xwlkrdyz',
+    contact: 'https://formspree.io/f/xrpgywjv'
   };
 
   document.querySelectorAll('.site-form').forEach(function (form) {
