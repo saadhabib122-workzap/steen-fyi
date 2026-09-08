@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=15">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -122,11 +122,11 @@
       <div class="anim d1">
         <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2rem">
           <p class="eyebrow" style="margin-bottom:1rem">After This Talk, Your Audience Will</p>
-          <ul style="display:flex;flex-direction:column;gap:.9rem;list-style:none;padding:0">
-            <li style="display:flex;gap:.75rem;align-items:flex-start;color:rgba(245,245,247,.8);font-size:var(--t-sm);line-height:1.65"><span style="color:var(--amber);font-weight:700;margin-top:.1em">✓</span>Recognize the difference between data that drives a decision and data that launders one</li>
-            <li style="display:flex;gap:.75rem;align-items:flex-start;color:rgba(245,245,247,.8);font-size:var(--t-sm);line-height:1.65"><span style="color:var(--amber);font-weight:700;margin-top:.1em">✓</span>Have a practical framework for challenging decisions before they're finalized, not after</li>
-            <li style="display:flex;gap:.75rem;align-items:flex-start;color:rgba(245,245,247,.8);font-size:var(--t-sm);line-height:1.65"><span style="color:var(--amber);font-weight:700;margin-top:.1em">✓</span>Walk away with language and questions to bring straight back to their own teams</li>
-            <li style="display:flex;gap:.75rem;align-items:flex-start;color:rgba(245,245,247,.8);font-size:var(--t-sm);line-height:1.65"><span style="color:var(--amber);font-weight:700;margin-top:.1em">✓</span>Feel confident slowing down the decisions that actually deserve more scrutiny</li>
+          <ul class="check-list">
+            <li class="check-list__item"><span class="check-list__marker">✓</span>Recognize the difference between data that drives a decision and data that launders one</li>
+            <li class="check-list__item"><span class="check-list__marker">✓</span>Have a practical framework for challenging decisions before they're finalized, not after</li>
+            <li class="check-list__item"><span class="check-list__marker">✓</span>Walk away with language and questions to bring straight back to their own teams</li>
+            <li class="check-list__item"><span class="check-list__marker">✓</span>Feel confident slowing down the decisions that actually deserve more scrutiny</li>
           </ul>
         </div>
       </div>
@@ -144,30 +144,22 @@
         <p style="color:rgba(245,245,247,.72);line-height:1.8;font-size:var(--t-lg)">This keynote is designed for organizations that already have data, tools, and ambition, but struggle to turn insight into confident decisions.</p>
       </div>
       <div class="anim d1">
-        <ul style="display:flex;flex-direction:column;gap:1rem;list-style:none;padding:0">
-          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(245,245,247,.07)">
-            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
-            <span style="color:rgba(245,245,247,.82);line-height:1.65">Executive leaders, P&amp;L owners and senior decision-makers who need clarity in complexity</span>
-          </li>
-          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(245,245,247,.07)">
-            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
-            <span style="color:rgba(245,245,247,.82);line-height:1.65">Data &amp; analytics leaders who need to influence decisions, not just produce reports</span>
-          </li>
-          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(245,245,247,.07)">
-            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
-            <span style="color:rgba(245,245,247,.82);line-height:1.65">Strategy, transformation and commercial teams navigating uncertainty</span>
-          </li>
-          <li style="display:flex;gap:.9rem;align-items:flex-start;padding-bottom:1rem;border-bottom:1px solid rgba(245,245,247,.07)">
-            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
-            <span style="color:rgba(245,245,247,.82);line-height:1.65">Organizations investing in AI and analytics who want to avoid faster bad decisions</span>
-          </li>
-          <li style="display:flex;gap:.9rem;align-items:flex-start">
-            <span style="color:var(--amber);font-weight:700;margin-top:.1em;flex-shrink:0">→</span>
-            <span style="color:rgba(245,245,247,.82);line-height:1.65">Leadership teams under pressure to become more data-informed without becoming more confused</span>
-          </li>
+        <ul class="check-list check-list--divided">
+          <li class="check-list__item"><span class="check-list__marker">→</span>Executive leaders, P&amp;L owners and senior decision-makers who need clarity in complexity</li>
+          <li class="check-list__item"><span class="check-list__marker">→</span>Data &amp; analytics leaders who need to influence decisions, not just produce reports</li>
+          <li class="check-list__item"><span class="check-list__marker">→</span>Strategy, transformation and commercial teams navigating uncertainty</li>
+          <li class="check-list__item"><span class="check-list__marker">→</span>Organizations investing in AI and analytics who want to avoid faster bad decisions</li>
+          <li class="check-list__item"><span class="check-list__marker">→</span>Leadership teams under pressure to become more data-informed without becoming more confused</li>
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SECTION BREAK -->
+<section class="section section--dark on-dark" style="padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem)">
+  <div class="container">
+    <p class="section-break anim">This is <em>Decision Laundering.</em></p>
   </div>
 </section>
 
@@ -180,26 +172,26 @@
       <p class="sh__sub">Many organizers need more than 45 minutes on a stage. Steen also works in these formats.</p>
     </div>
     <div class="grid-3 anim d1" style="margin-top:0">
-      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:16px">
-        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0a0a0a);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+      <div class="icon-card">
+        <div class="icon-card__icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">Workshops</h3>
-        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">A hands-on session where leadership teams apply the Decision Laundering framework directly to a live decision on their table.</p>
+        <h3 class="icon-card__title">Workshops</h3>
+        <p class="icon-card__body">A hands-on session where leadership teams apply the Decision Laundering framework directly to a live decision on their table.</p>
       </div>
-      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:16px">
-        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0a0a0a);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+      <div class="icon-card">
+        <div class="icon-card__icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">Panels &amp; Moderation</h3>
-        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">Steen moderates and joins panels on data, AI, and decision-making, bringing the same clarity he brings to the main stage.</p>
+        <h3 class="icon-card__title">Panels &amp; Moderation</h3>
+        <p class="icon-card__body">Steen moderates and joins panels on data, AI, and decision-making, bringing the same clarity he brings to the main stage.</p>
       </div>
-      <div style="padding:2rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:16px">
-        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--slate),#0a0a0a);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+      <div class="icon-card">
+        <div class="icon-card__icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/></svg>
         </div>
-        <h3 style="font-size:var(--t-xl);margin-bottom:.6rem">Advisory &amp; Consulting</h3>
-        <p style="color:var(--text-muted);font-size:var(--t-sm);line-height:1.75">For leadership teams who want to go further: ongoing advisory on data strategy, decision governance, and analytics transformation.</p>
+        <h3 class="icon-card__title">Advisory &amp; Consulting</h3>
+        <p class="icon-card__body">For leadership teams who want to go further: ongoing advisory on data strategy, decision governance, and analytics transformation.</p>
       </div>
     </div>
   </div>
@@ -233,9 +225,9 @@
       <h2 class="sh__title">What Organizers Say About Steen</h2>
     </div>
     <div class="grid-3">
-      <div class="testimonial anim d1"><p class="testimonial__body">Inviting Steen Rasmussen as a keynote speaker for The Google Analytics 4 Summit was a clever move based on the feedback of the audience. His performance was so impactful that we're already considering a repeat engagement.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( GA$ summit logo ).webp" alt="GA Summit" class="testimonial__logo"><div><p class="testimonial__name">Roberto Guiotto</p><p class="testimonial__role">Lead organizer, GA Summit</p></div></div></div>
-      <div class="testimonial anim d2"><p class="testimonial__body">Steen has been a regular keynote speaker at our last many Superweek events, and his presentations are always both enlightening and engaging. He is the least of my concerns.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( Super week logo ).webp" alt="Superweek" class="testimonial__logo"><div><p class="testimonial__name">Zoltán Bánóczy</p><p class="testimonial__role">Lead organizer, Superweek</p></div></div></div>
-      <div class="testimonial anim d3"><p class="testimonial__body">Steen is one of those experienced practitioners who "screams": Trust me, I know what I'm doing, from the moment he steps on the stage. His first-hand insights were deeply valued by every single member of the audience.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( All web ).webp" alt="ALLWEB" class="testimonial__logo"><div><p class="testimonial__name">Darko Buldioski</p><p class="testimonial__role">Lead organizer, ALLWEB Conference</p></div></div></div>
+      <div class="testimonial pull-quote anim d1"><p class="testimonial__body">Inviting Steen Rasmussen as a keynote speaker for The Google Analytics 4 Summit was a clever move based on the feedback of the audience. His performance was so impactful that we're already considering a repeat engagement.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( GA$ summit logo ).webp" alt="GA Summit" class="testimonial__logo"><div><p class="testimonial__name">Roberto Guiotto</p><p class="testimonial__role">Lead organizer, GA Summit</p></div></div></div>
+      <div class="testimonial pull-quote anim d2"><p class="testimonial__body">Steen has been a regular keynote speaker at our last many Superweek events, and his presentations are always both enlightening and engaging. He is the least of my concerns.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( Super week logo ).webp" alt="Superweek" class="testimonial__logo"><div><p class="testimonial__name">Zoltán Bánóczy</p><p class="testimonial__role">Lead organizer, Superweek</p></div></div></div>
+      <div class="testimonial pull-quote anim d3"><p class="testimonial__body">Steen is one of those experienced practitioners who "screams": Trust me, I know what I'm doing, from the moment he steps on the stage. His first-hand insights were deeply valued by every single member of the audience.</p><div class="testimonial__meta"><img src="Brand_Assests/event organizer's reccommnedations for steen ( All web ).webp" alt="ALLWEB" class="testimonial__logo"><div><p class="testimonial__name">Darko Buldioski</p><p class="testimonial__role">Lead organizer, ALLWEB Conference</p></div></div></div>
     </div>
   </div>
 </section>
@@ -283,6 +275,6 @@
   </div>
 </footer>
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
-<script src="js/script.js?v=14"></script>
+<script src="js/script.js?v=15"></script>
 </body>
 </html>

@@ -116,17 +116,57 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ─── Contact/Booking Form Submit ─────────────────────────────────────────────
+  // Backed by Formspree (https://formspree.io). Create a form per endpoint below
+  // in your Formspree dashboard, then paste each form's ID in place of the
+  // REPLACE_WITH_*_FORM_ID placeholders. Until then, submissions are blocked
+  // client-side with a visible message instead of silently failing.
+
+  var FORM_ENDPOINTS = {
+    contact: 'https://formspree.io/f/REPLACE_WITH_CONTACT_FORM_ID',
+    booking: 'https://formspree.io/f/REPLACE_WITH_BOOKING_FORM_ID'
+  };
 
   document.querySelectorAll('.site-form').forEach(function (form) {
+    var btn = form.querySelector('[type=submit]');
+    var status = form.querySelector('.form-status');
+    var origBtnText = btn ? btn.textContent : '';
+    var origStatusText = status ? status.textContent : '';
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var btn = form.querySelector('[type=submit]');
-      if (btn) {
-        var orig = btn.textContent;
-        btn.textContent = 'Message Sent ✓';
-        btn.disabled = true;
-        setTimeout(function () { btn.textContent = orig; btn.disabled = false; }, 4000);
+      var endpoint = FORM_ENDPOINTS[form.getAttribute('data-form-name')];
+
+      if (!endpoint || endpoint.indexOf('REPLACE_WITH') !== -1) {
+        if (status) {
+          status.textContent = 'This form is not connected yet.';
+          status.style.color = 'var(--amber)';
+        }
+        return;
       }
+
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      if (status) { status.textContent = ''; }
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (!res.ok) throw new Error('Form submission failed');
+        if (btn) btn.textContent = 'Message Sent ✓';
+        if (status) { status.textContent = "Thanks — we'll be in touch soon."; status.style.color = ''; }
+        form.reset();
+        setTimeout(function () {
+          if (btn) { btn.textContent = origBtnText; btn.disabled = false; }
+          if (status) { status.textContent = origStatusText; }
+        }, 4000);
+      }).catch(function () {
+        if (btn) { btn.textContent = origBtnText; btn.disabled = false; }
+        if (status) {
+          status.textContent = 'Something went wrong — please try again or email us directly.';
+          status.style.color = 'var(--amber)';
+        }
+      });
     });
   });
 

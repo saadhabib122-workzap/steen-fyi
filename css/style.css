@@ -650,6 +650,102 @@ h1,h2,h3,h4,h5 {
 .testimonial__avatar { width: 44px; height: 44px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
 
 /* ============================================================
+   EDITORIAL COMPONENTS
+   Patterns translated from an editorial-speaker-site reference:
+   two-beat heroes, heading-scale pull-quotes, bare section-break
+   statements, and named/geo-tagged engagement entries.
+   ============================================================ */
+
+/* Two-beat hero: a small, personal-register line above the existing
+   .display-headline / .hero-sub, so the greeting and the bold claim
+   don't share the same visual weight. */
+.hero__voice {
+  font-family: var(--font-sans); font-size: var(--t-lg); font-weight: 500;
+  opacity: .8; margin-bottom: .6rem;
+}
+
+/* Pull-quote: promotes a .testimonial to heading scale — a statement,
+   not a sidebar aside. Reuses .testimonial's existing structure/markup. */
+.pull-quote { border-left: none; padding: 0; }
+.pull-quote .testimonial__body {
+  font-size: var(--t-2xl); font-weight: 700; line-height: 1.32;
+  letter-spacing: -.01em; max-width: 640px;
+}
+.pull-quote .testimonial__body::before { font-size: 3.5rem; }
+
+/* Section-break: a bare, confident short statement with no supporting
+   copy — pure rhythm/breathing space between denser sections. */
+.section-break {
+  text-align: center; max-width: 720px; margin: 0 auto;
+  font-family: var(--font-serif); font-weight: 800;
+  font-size: var(--t-4xl); line-height: 1.15; letter-spacing: -.02em;
+}
+.section-break em { font-style: normal; color: var(--accent); }
+
+/* Engagement entry: named, geo-tagged past-event line item — replaces
+   a flattened logo/photo grid with a curated, credential-like list. */
+.engagement-list { display: flex; flex-direction: column; }
+.engagement-entry {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;
+  gap: .5rem 2rem; padding: 1.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.engagement-entry:first-child { padding-top: 0; }
+.engagement-entry__event {
+  font-family: var(--font-serif); font-size: var(--t-xl); font-weight: 700;
+  color: #FFFFFF;
+}
+.engagement-entry__location {
+  font-size: var(--t-sm); color: rgba(245,245,247,.55); white-space: nowrap; flex-shrink: 0;
+}
+.engagement-entry__body {
+  flex-basis: 100%; font-size: var(--t-sm); color: rgba(245,245,247,.62); line-height: 1.7;
+}
+.engagement-entry__thumb {
+  width: 56px; height: 56px; object-fit: cover; border-radius: 12px; flex-shrink: 0;
+}
+
+/* CTA band: a full-width bright-accent callout bar, a bolder
+   alternative to a plain CTA section for the single highest-intent ask. */
+.cta-band {
+  background: var(--amber); color: var(--charcoal);
+  padding: clamp(2.5rem,5vw,4rem) var(--gutter);
+  text-align: center;
+}
+.cta-band h2, .cta-band p { color: var(--charcoal); }
+.cta-band .btn-group { justify-content: center; }
+
+/* Check-list: icon/arrow + text row, extracted from a pattern repeated
+   inline across multiple pages (talk takeaways, audience lists). */
+.check-list { display: flex; flex-direction: column; gap: .9rem; list-style: none; padding: 0; }
+.check-list--divided .check-list__item {
+  padding-bottom: 1rem; border-bottom: 1px solid rgba(245,245,247,.07);
+}
+.check-list--divided .check-list__item:last-child { padding-bottom: 0; border-bottom: none; }
+.check-list__item {
+  display: flex; gap: .75rem; align-items: flex-start;
+  font-size: var(--t-sm); line-height: 1.65; color: rgba(245,245,247,.8);
+}
+.check-list__marker { color: var(--amber); font-weight: 700; margin-top: .1em; flex-shrink: 0; }
+
+/* Icon card: icon circle + title + body, extracted from a repeated
+   inline "workshops/panels/advisory"-style three-column card pattern. */
+.icon-card {
+  padding: 2rem; background: var(--bg-alt);
+  border: 1px solid var(--border); border-radius: 16px;
+}
+.icon-card__icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: linear-gradient(135deg,var(--slate),#0a0a0a);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+.icon-card__title { font-size: var(--t-xl); margin-bottom: .6rem; }
+.icon-card__body { color: var(--text-muted); font-size: var(--t-sm); line-height: 1.75; }
+.on-dark .icon-card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); }
+.on-dark .icon-card__title { color: #FFFFFF; }
+
+/* ============================================================
    SPLIT LAYOUT
    ============================================================ */
 
@@ -951,6 +1047,8 @@ h1,h2,h3,h4,h5 {
   .split-2up-portrait { grid-template-columns: 1fr; gap: 1.5rem; justify-items: center; text-align: center; }
   .split-2up__secondary { order: 2; }
   .portrait-collage { flex-direction: column; }
+  .engagement-entry { flex-direction: column; align-items: flex-start; gap: .35rem; }
+  .pull-quote .testimonial__body { font-size: var(--t-xl); }
 }
 
 @media (max-width: 480px) {

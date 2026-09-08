@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=15">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -103,7 +103,7 @@
 <section class="section">
   <div class="container" style="max-width:760px">
 
-    <form class="site-form anim" style="background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;padding:clamp(2rem,5vw,3.5rem)">
+    <form class="site-form anim" data-form-name="booking" style="background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;padding:clamp(2rem,5vw,3.5rem)">
       <h2 style="font-size:var(--t-2xl);margin-bottom:.5rem">Speaking Request</h2>
       <p style="color:var(--text-muted);margin-bottom:2rem">All fields marked <span style="color:var(--amber)">*</span> are required.</p>
 
@@ -112,25 +112,25 @@
         <p class="eyebrow" style="margin-bottom:1.25rem">Your Details</p>
         <div class="form-group">
           <label class="form-label">Full Name <span style="color:var(--amber)">*</span></label>
-          <input class="form-input" type="text" placeholder="Your full name" required>
+          <input class="form-input" type="text" name="name" placeholder="Your full name" required>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Email <span style="color:var(--amber)">*</span></label>
-            <input class="form-input" type="email" placeholder="your@email.com" required>
+            <input class="form-input" type="email" name="email" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">Phone Number</label>
-            <input class="form-input" type="tel" placeholder="+1 (555) 000-0000">
+            <input class="form-input" type="tel" name="phone" placeholder="+1 (555) 000-0000">
           </div>
         </div>
         <div class="form-group">
           <label class="form-label">Organisation / Company <span style="color:var(--amber)">*</span></label>
-          <input class="form-input" type="text" placeholder="Your company or organisation" required>
+          <input class="form-input" type="text" name="organisation" placeholder="Your company or organisation" required>
         </div>
         <div class="form-group">
           <label class="form-label">Your Role / Title</label>
-          <input class="form-input" type="text" placeholder="e.g. Head of Events">
+          <input class="form-input" type="text" name="role" placeholder="e.g. Head of Events">
         </div>
       </div>
 
@@ -139,16 +139,16 @@
         <p class="eyebrow" style="margin-bottom:1.25rem">Event Details</p>
         <div class="form-group">
           <label class="form-label">Event Name <span style="color:var(--amber)">*</span></label>
-          <input class="form-input" type="text" placeholder="Name of your event or conference" required>
+          <input class="form-input" type="text" name="event_name" placeholder="Name of your event or conference" required>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Event Date <span style="color:var(--amber)">*</span></label>
-            <input class="form-input" type="date" required>
+            <input class="form-input" type="date" name="event_date" required>
           </div>
           <div class="form-group">
             <label class="form-label">Location / City</label>
-            <input class="form-input" type="text" placeholder="City or 'Virtual'">
+            <input class="form-input" type="text" name="location" placeholder="City or 'Virtual'">
           </div>
         </div>
       </div>
@@ -158,16 +158,17 @@
         <p class="eyebrow" style="margin-bottom:1.25rem">Additional Context</p>
         <div class="form-group">
           <label class="form-label">Tell us about your event <span style="color:var(--amber)">*</span></label>
-          <textarea class="form-textarea" style="min-height:140px" placeholder="What is the event about? Roughly how many people, and what format (keynote, panel, workshop)? Any specific themes, topics, or challenges you'd like the talk to address?" required></textarea>
+          <textarea class="form-textarea" name="message" style="min-height:140px" placeholder="What is the event about? Roughly how many people, and what format (keynote, panel, workshop)? Any specific themes, topics, or challenges you'd like the talk to address?" required></textarea>
         </div>
         <label class="form-checkbox">
           <input type="checkbox" name="newsletter">
           Keep me updated with Steen's newsletters and insights
         </label>
+        <input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
       </div>
 
       <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;font-size:1rem;padding:.9rem 2rem">Submit Booking Request</button>
-      <p style="text-align:center;color:var(--text-muted);font-size:var(--t-xs);margin-top:1rem">We respond within 24 hours on business days.</p>
+      <p class="form-status" role="status" style="text-align:center;font-size:var(--t-xs);margin-top:1rem;color:var(--text-muted)">We respond within 24 hours on business days.</p>
     </form>
 
   </div>
@@ -202,6 +203,6 @@
   </div>
 </footer>
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
-<script src="js/script.js?v=14"></script>
+<script src="js/script.js?v=15"></script>
 </body>
 </html>

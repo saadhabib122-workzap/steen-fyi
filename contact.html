@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=15">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -103,15 +103,15 @@
 
       <!-- Right: Form -->
       <div class="anim d1">
-        <form class="form site-form" style="padding:2.5rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:16px">
+        <form class="form site-form" data-form-name="contact" style="padding:2.5rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:16px">
           <h2 style="font-size:var(--t-2xl);margin-bottom:1.75rem">Send a Message</h2>
           <div class="form-group">
             <label class="form-label">Full Name <span style="color:var(--amber)">*</span></label>
-            <input class="form-input" type="text" placeholder="Your full name" required>
+            <input class="form-input" type="text" name="name" placeholder="Your full name" required>
           </div>
           <div class="form-group">
             <label class="form-label">Email <span style="color:var(--amber)">*</span></label>
-            <input class="form-input" type="email" placeholder="your@email.com" required>
+            <input class="form-input" type="email" name="email" placeholder="your@email.com" required>
           </div>
           <label class="form-checkbox" style="margin-top:-.25rem">
             <input type="checkbox" name="newsletter">
@@ -119,7 +119,7 @@
           </label>
           <div class="form-group">
             <label class="form-label">Topic <span style="color:var(--amber)">*</span></label>
-            <select class="form-select" required>
+            <select class="form-select" name="topic" required>
               <option value="" disabled selected>What do you want to talk about?</option>
               <option>Consulting enquiry</option>
               <option>Media / Press</option>
@@ -129,13 +129,15 @@
           </div>
           <div class="form-group">
             <label class="form-label">Headline</label>
-            <input class="form-input" type="text" placeholder="Optional subject line">
+            <input class="form-input" type="text" name="headline" placeholder="Optional subject line">
           </div>
           <div class="form-group">
             <label class="form-label">Message <span style="color:var(--amber)">*</span></label>
-            <textarea class="form-textarea" placeholder="Your message..." required></textarea>
+            <textarea class="form-textarea" name="message" placeholder="Your message..." required></textarea>
           </div>
+          <input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Share Your Thoughts</button>
+          <p class="form-status" role="status" style="text-align:center;font-size:var(--t-xs);margin-top:.75rem;color:var(--text-muted)"></p>
         </form>
       </div>
     </div>
@@ -163,6 +165,6 @@
   </div>
 </footer>
 <div class="cookie-banner" id="cookie-banner"><p>This site uses cookies to improve your experience.</p><button class="btn btn--amber" id="cookie-accept" style="width:100%;justify-content:center">Accept</button></div>
-<script src="js/script.js?v=14"></script>
+<script src="js/script.js?v=15"></script>
 </body>
 </html>
