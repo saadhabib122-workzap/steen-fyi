@@ -1,28 +1,4 @@
-// ─── Dark Mode ───────────────────────────────────────────────────────────────
-
-(function () {
-  const saved = localStorage.getItem('steen-theme');
-  const pref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', saved || pref);
-})();
-
 document.addEventListener('DOMContentLoaded', function () {
-
-  // Dark mode toggle
-  const html = document.documentElement;
-  const toggles = document.querySelectorAll('.dark-toggle');
-
-  function setTheme(t) {
-    html.setAttribute('data-theme', t);
-    localStorage.setItem('steen-theme', t);
-  }
-
-  toggles.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-    });
-    btn.setAttribute('aria-label', 'Toggle dark mode');
-  });
 
   // ─── Nav Scroll ──────────────────────────────────────────────────────────────
 
