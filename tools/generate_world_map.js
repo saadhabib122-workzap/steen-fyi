@@ -13,19 +13,49 @@ const fs = require('fs');
 const nodePath = require('path');
 
 const CITIES = [
+  // North America
   { name: 'Vancouver', country: 'Canada', lat: 49.2827, lon: -123.1207 },
   { name: 'Silicon Valley', country: 'US', lat: 37.3875, lon: -122.0575 },
   { name: 'San Francisco', country: 'US', lat: 37.7749, lon: -122.4194 },
   { name: 'Toronto', country: 'Canada', lat: 43.6532, lon: -79.3832 },
   { name: 'Boston', country: 'US', lat: 42.3601, lon: -71.0589 },
   { name: 'New York', country: 'US', lat: 40.7128, lon: -74.0060 },
+  { name: 'Philadelphia', country: 'US', lat: 39.9526, lon: -75.1652 },
+  // UK & Ireland
   { name: 'Dublin', country: 'Ireland', lat: 53.3498, lon: -6.2603 },
   { name: 'Manchester', country: 'UK', lat: 53.4808, lon: -2.2426 },
+  { name: 'Bristol', country: 'UK', lat: 51.4545, lon: -2.5879 },
   { name: 'London', country: 'UK', lat: 51.5074, lon: -0.1278 },
-  { name: 'Amsterdam', country: 'Netherlands', lat: 52.3676, lon: 4.9041 },
-  { name: 'Malmö', country: 'Sweden', lat: 55.6050, lon: 13.0038 },
+  // Nordics
   { name: 'Copenhagen', country: 'Denmark', lat: 55.6761, lon: 12.5683 },
+  { name: 'Aarhus', country: 'Denmark', lat: 56.1629, lon: 10.2039 },
+  { name: 'Malmö', country: 'Sweden', lat: 55.6050, lon: 13.0038 },
+  { name: 'Stockholm', country: 'Sweden', lat: 59.3293, lon: 18.0686 },
+  { name: 'Oslo', country: 'Norway', lat: 59.9139, lon: 10.7522 },
+  { name: 'Helsinki', country: 'Finland', lat: 60.1699, lon: 24.9384 },
+  // Western & Central Europe
+  { name: 'Amsterdam', country: 'Netherlands', lat: 52.3676, lon: 4.9041 },
+  { name: 'Brussels', country: 'Belgium', lat: 50.8503, lon: 4.3517 },
+  { name: 'Paris', country: 'France', lat: 48.8566, lon: 2.3522 },
+  { name: 'Berlin', country: 'Germany', lat: 52.5200, lon: 13.4050 },
+  { name: 'Munich', country: 'Germany', lat: 48.1351, lon: 11.5820 },
+  { name: 'Zurich', country: 'Switzerland', lat: 47.3769, lon: 8.5417 },
+  { name: 'Vienna', country: 'Austria', lat: 48.2082, lon: 16.3738 },
+  { name: 'Prague', country: 'Czech Republic', lat: 50.0755, lon: 14.4378 },
+  { name: 'Brno', country: 'Czech Republic', lat: 49.1951, lon: 16.6068 },
+  { name: 'Budapest', country: 'Hungary', lat: 47.4979, lon: 19.0402 },
+  // Southern & Southeastern Europe
+  { name: 'Madrid', country: 'Spain', lat: 40.4168, lon: -3.7038 },
+  { name: 'Barcelona', country: 'Spain', lat: 41.3851, lon: 2.1734 },
+  { name: 'Lisbon', country: 'Portugal', lat: 38.7223, lon: -9.1393 },
+  { name: 'Milan', country: 'Italy', lat: 45.4642, lon: 9.1900 },
+  { name: 'Bologna', country: 'Italy', lat: 44.4949, lon: 11.3426 },
+  { name: 'Split', country: 'Croatia', lat: 43.5081, lon: 16.4402 },
   { name: 'Belgrade', country: 'Serbia', lat: 44.7866, lon: 20.4489 },
+  { name: 'Bucharest', country: 'Romania', lat: 44.4268, lon: 26.1025 },
+  { name: 'Athens', country: 'Greece', lat: 37.9838, lon: 23.7275 },
+  // Middle East & Asia
+  { name: 'Dubai', country: 'UAE', lat: 25.2048, lon: 55.2708 },
   { name: 'Mumbai', country: 'India', lat: 19.0760, lon: 72.8777 },
 ];
 
