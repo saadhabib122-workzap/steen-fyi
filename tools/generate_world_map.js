@@ -76,14 +76,14 @@ const countryPaths = countries.features
 
 const dots = CITIES.map(c => {
   const [x, y] = projection([c.lon, c.lat]);
-  return `<g><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" class="citydot"><title>${c.name}, ${c.country}</title></circle></g>`;
+  return `<g><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" class="citydot"><title>${c.name}, ${c.country}</title></circle></g>`;
 }).join('');
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${WIDTH} ${HEIGHT}" role="img" aria-label="Map showing ${CITIES.length} cities where Steen Rasmussen has spoken">
 <style>
   .bg{fill:#000}
   .landxx{fill:rgba(255,255,255,.16);stroke:rgba(255,255,255,.22);stroke-width:1}
-  .citydot{fill:#FF453A;stroke:#000;stroke-width:1.5}
+  .citydot{fill:#FF453A;stroke:#000;stroke-width:.75}
 </style>
 <rect class="bg" x="0" y="0" width="${WIDTH}" height="${HEIGHT}"/>
 ${countryPaths}
