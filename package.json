@@ -20,6 +20,7 @@
   "homepage": "https://github.com/saadhabib122-workzap/steen-fyi#readme",
   "devDependencies": {
     "puppeteer": "^25.2.1",
-    "serve": "^14.2.6"
+    "serve": "^14.2.6",
+    "sharp": "^0.35.4"
   }
 }

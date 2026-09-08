@@ -12,7 +12,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd '/d/Steen.fyi New Website' && git add -A && git diff --cached --quiet || (git commit -m \"deploy: $(date +%H%M)\" && git push)",
+            "command": "cd '/c/Steen.fyi' && git add -A && git diff --cached --quiet || (git commit -m \"deploy: $(date +%H%M)\" && git push)",
             "shell": "bash",
             "timeout": 60,
             "statusMessage": "Deploying to GitHub Pages..."
