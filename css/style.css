@@ -501,32 +501,6 @@ h1,h2,h3,h4,h5 {
   border-radius: 20px 20px 0 0;
 }
 
-/* Article card */
-.art-card { display: block; text-decoration: none; }
-.art-card__thumb {
-  border-radius: 20px; overflow: hidden;
-  aspect-ratio: 16/10;
-  background: linear-gradient(135deg, var(--charcoal) 0%, #000000 100%);
-  display: flex; align-items: flex-end; padding: 1.25rem;
-  position: relative; transition: transform var(--ease-slow);
-}
-.art-card:hover .art-card__thumb { transform: translateY(-4px); }
-.art-card__thumb-date {
-  font-size: var(--t-xs); font-weight: 600;
-  color: rgba(245,245,247,.6);
-}
-.art-card__body { padding: 1.1rem .25rem .5rem; }
-.art-card__date {
-  font-size: var(--t-xs); font-weight: 600;
-  color: rgba(245,245,247,.55); margin-bottom: .35rem;
-}
-.art-card__title {
-  font-family: var(--font-serif); font-size: var(--t-xl);
-  font-weight: 700; line-height: 1.25; color: #FFFFFF;
-  transition: color .2s ease;
-}
-.art-card:hover .art-card__title { color: var(--accent); }
-
 /* Feature card (three nav) */
 .feature-card {
   display: flex; flex-direction: column; gap: .75rem;
@@ -576,8 +550,8 @@ h1,h2,h3,h4,h5 {
 
 .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
 .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 2.5rem; }
-.grid-articles { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem 2.5rem; }
 .grid-features { display: grid; grid-template-columns: repeat(3,1fr); }
+.grid-features--two { grid-template-columns: repeat(2,1fr); }
 
 /* Two-column split used on Decision Laundering and similar detail pages */
 .split-2up { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,6rem); }
@@ -996,7 +970,6 @@ h1,h2,h3,h4,h5 {
 
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2,1fr); }
-  .grid-articles { grid-template-columns: repeat(2,1fr); }
   .grid-features { grid-template-columns: 1fr; }
   .feature-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
   .feature-card:last-child { border-bottom: none; }
@@ -1013,7 +986,6 @@ h1,h2,h3,h4,h5 {
   :root { --nav-h: 60px; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
-  .grid-articles { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; }
   .split--flip .split__media { order: 0; }
   .cta-cards, .cta-cards--three { grid-template-columns: 1fr; }
