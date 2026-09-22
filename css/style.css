@@ -673,6 +673,16 @@ h1,h2,h3,h4,h5 {
   .full-bleed-gallery--3 { grid-template-columns: repeat(2,1fr); }
 }
 
+/* Captioned gallery figure: photo + event/city label overlay, for
+   galleries where each shot needs to stay tied to a specific event. */
+.full-bleed-gallery figure { margin: 0; position: relative; overflow: hidden; }
+.full-bleed-gallery figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.full-bleed-gallery figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.5rem .9rem .8rem; font-size: var(--t-xs); font-weight: 600; letter-spacing: .01em;
+  color: #FFFFFF; background: linear-gradient(to top, rgba(0,0,0,.78), transparent);
+}
+
 /* Check-list: icon/arrow + text row, extracted from a pattern repeated
    inline across multiple pages (talk takeaways, audience lists). */
 .check-list { display: flex; flex-direction: column; gap: .9rem; list-style: none; padding: 0; }
@@ -998,7 +1008,8 @@ h1,h2,h3,h4,h5 {
   .footer__social { justify-content: center; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
   .hero-photo { min-height: 90vh; }
-  .about-hero__media { order: -1; width: 100% !important; max-width: 320px; margin: 0 auto 2rem; }
+  .hero-dark { padding: calc(var(--nav-h) + 1.5rem) 0 2.5rem; }
+  .about-hero__media { order: -1; width: 100% !important; max-width: 150px; margin: 0 auto 1.25rem; }
   .split-2up { grid-template-columns: 1fr; gap: 2.5rem; }
   .split-2up-portrait { grid-template-columns: 1fr; gap: 1.5rem; justify-items: center; text-align: center; }
   .split-2up__secondary { order: 2; }
