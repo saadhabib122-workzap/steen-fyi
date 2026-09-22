@@ -496,7 +496,7 @@ h1,h2,h3,h4,h5 {
 }
 .eng-card__body { font-size: var(--t-sm); color: var(--text-muted); line-height: 1.7; }
 .eng-card__cover {
-  height: 150px; margin: -2rem -2rem 1.25rem;
+  height: 210px; margin: -2rem -2rem 1.25rem;
   background-size: cover; background-position: center;
   border-radius: 20px 20px 0 0;
 }
@@ -586,7 +586,7 @@ h1,h2,h3,h4,h5 {
 .testimonial__role { color: var(--text-muted); font-size: var(--t-sm); }
 .on-dark .testimonial__role { color: rgba(245,245,247,.55); }
 .testimonial__meta { display: flex; align-items: center; gap: .75rem; }
-.testimonial__logo { width: 34px; height: 34px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+.testimonial__logo { width: 34px; height: 34px; object-fit: contain; border-radius: 8px; flex-shrink: 0; background: #FFFFFF; }
 .testimonial__avatar { width: 44px; height: 44px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
 
 /* ============================================================
@@ -712,6 +712,14 @@ h1,h2,h3,h4,h5 {
 .icon-card__body { color: var(--text-muted); font-size: var(--t-sm); line-height: 1.75; }
 .on-dark .icon-card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); }
 .on-dark .icon-card__title { color: #FFFFFF; }
+/* Dark-card modifier: same solid dark treatment as an on-dark icon-card,
+   usable inside a light section so two keynote/feature boxes can match
+   regardless of what background their own section happens to sit on. */
+.icon-card--dark {
+  background: linear-gradient(135deg,var(--bg-dark),#0a0a0a);
+  border-color: rgba(255,255,255,.08);
+}
+.icon-card--dark .icon-card__title { color: #FFFFFF; }
 
 /* ============================================================
    SPLIT LAYOUT
