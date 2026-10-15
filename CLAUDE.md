@@ -78,7 +78,7 @@ git add -A && git diff --cached --quiet || (git commit -m "deploy: $(date +%H%M)
 - Every file change made during a session is committed and pushed automatically when Claude finishes responding
 - GitHub Pages deploys the updated site within ~60 seconds
 - No manual git commands needed
-- Live site: https://saadhabib122-workzap.github.io/steen-fyi/
+- Live site: https://steen.fyi/ (custom domain via CNAME; old github.io URL redirects)
 - Repo: https://github.com/saadhabib122-workzap/steen-fyi
 
 **If a push fails** (merge conflict, network issue), re-run manually:
